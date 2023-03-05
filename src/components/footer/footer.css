@@ -1,0 +1,53 @@
+.footer-container {
+  margin-bottom: 0;
+  background-color: var(--pink);
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--cream);
+  padding-inline: 5rem;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--cream);
+  line-height: 2.5rem;
+}
+
+.footerlinks-container {
+  display: flex;
+  height: 100%;
+  width: 33%;
+  justify-content: space-around;
+  padding-block: 2.5rem;
+}
+
+.dinobeach-text-line1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.dinobeach-text-line2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.footer-script {
+  margin-block: 2.5rem;
+}
+
+@media (max-width: 650px) {
+  .footerlinks-container {
+    flex-direction: column;
+    margin-block: 1.25rem;
+    align-items: space-around;
+  }
+
+  .footer-script {
+    margin-block: 1.25rem;
+  }
+}

@@ -18,13 +18,14 @@
   color: var(--blue);
 }
 
-.mobileMenuClosed,
-.mobileMenuOpen,
-.waves-menu,
-.links-container-closed,
-.closeIcon {
+.closeMobileMenu,
+.openMobileMenu,
+.hideCloseIcon,
+.waves-menu {
   display: none;
 }
+
+/* Mobile CSS */
 
 @media (max-width: 650px) {
   .waves-menu {
@@ -32,32 +33,46 @@
     width: 4rem;
   }
 
-  .links-container {
+  .desktop-links-container {
+    display: none;
+  }
+
+  .openMobileMenu {
+    z-index: 10;
+    position: fixed;
+    display: inline-block;
+    background-color: var(--yellow);
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .nav-flex-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .links-container-mobile {
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
 
-  .link-item {
-    font-size: 1.125rem;
-  }
-
-  .mobileMenuOpen {
-    height: 100vh;
-    width: 100vw;
-    z-index: 10;
-    display: flex;
+  .showCloseIcon {
     position: absolute;
-    top: -15px;
-    left: 0px;
-    background-color: var(--yellow);
+    top: 2rem;
+    right: 2rem;
   }
 
-  .closeIconActive {
-    position: abosulte;
-    top: 0;
-    right: 0;
-    padding: 5rem;
+  .link-item {
+    font-size: 3.75rem;
+    color: white;
   }
 }

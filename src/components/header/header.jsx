@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./header1.css";
+import "./header.css";
 
 import { Link } from "react-router-dom";
 import { AiOutlineCloseCircle } from "react-icons/ai";
