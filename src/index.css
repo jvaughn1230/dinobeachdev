@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Aclonica&display=swap");
+
+:root {
+  /* Main Colors */
+  --cream: #faf6ee;
+  --pink: #e2abb3;
+  --blue: #3c97be;
+  --dark: #5d6567;
+  --yellow: #ffde9d;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fonts and text sizing */
+.title-text {
+  font-family: "Aclonica", sans-serif;
+}
+
+.content-text {
+  font-family: "ABeeZee", sans-serif;
+  color: var(--dark);
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(#eda9b2, #23b4d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page-heading {
+  font-size: clamp(1.5rem, 4.6875vw, 72px);
+}
+
+.sub-heading {
+  font-size: clamp(1.5rem, 3.125vw, 48px);
 }
