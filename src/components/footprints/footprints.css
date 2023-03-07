@@ -1,0 +1,89 @@
+.footprints-container {
+  display: flex;
+  margin-bottom: 2.5rem;
+  margin-top: 5.2083vw;
+  justify-content: space-between;
+  max-height: 1rem;
+}
+
+.dinoprint {
+  height: 4rem;
+  width: 4.1667vw;
+  position: relative;
+}
+
+.print1 {
+  transform: rotate(50deg);
+  top: 8rem;
+}
+
+.print2 {
+  transform: rotate(50deg);
+  right: 4rem;
+  top: 4rem;
+}
+
+.print3 {
+  transform: rotate(70deg);
+  right: 5rem;
+}
+
+.print4 {
+  transform: rotate(65deg);
+  bottom: 3.5rem;
+  right: 5rem;
+}
+
+.print5 {
+  transform: rotate(100deg);
+  right: 4rem;
+}
+
+.print6 {
+  transform: rotate(100deg);
+  right: 6rem;
+  bottom: 1.5rem;
+}
+
+.print7 {
+  transform: rotate(90deg);
+  right: 4rem;
+  top: 3rem;
+}
+
+.print8 {
+  transform: rotate(90deg);
+  right: 5rem;
+  top: 5rem;
+}
+
+.print9 {
+  transform: rotate(90deg);
+  right: 5rem;
+  top: 8rem;
+}
+
+.print10 {
+  transform: rotate(90deg);
+  right: 5rem;
+  top: 7rem;
+}
+
+@media (max-width: 600px) {
+  .print1 {
+    transform: rotate(125deg);
+    position: static;
+  }
+  .print2 {
+    transform: rotate(65deg);
+    position: static;
+  }
+  .print3 {
+    transform: rotate(125deg);
+    position: static;
+  }
+  .print4 {
+    transform: rotate(65deg);
+    position: static;
+  }
+}
