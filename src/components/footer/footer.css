@@ -7,8 +7,8 @@
   align-items: center;
   color: var(--cream);
   padding-inline: 5rem;
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
 }
 
 .footer-link {
