@@ -1,9 +1,5 @@
 .sub-heading {
-  font-size: clamp(1.5rem, 3.125vw, 48px);
-}
-
-.page-heading {
-  font-size: clamp(1.5rem, 4.6875vw, 72px);
+  font-size: var(--lg-text);
 }
 
 @media (max-width: 600px) {

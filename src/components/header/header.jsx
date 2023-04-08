@@ -21,7 +21,7 @@ const Header = () => {
       />
 
       {/* Desktop Links Container */}
-      <div className="desktop-links-container title-text">
+      <div className="desktop-links-container">
         <Link to="/about" className="link-item">
           About
         </Link>
@@ -65,14 +65,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// {/* <header className="header-container">
-//
-
-//
-
-//       {/* Mobile Container */}
-
-//       </div>
-//       </div>
-//     </header> */}

@@ -3,6 +3,12 @@
   font-size: 3rem;
   line-height: 1;
   padding-top: 0.75rem;
+  font-family: var(--header-text);
+}
+
+servicessection__header {
+  font-family: var(--content-text);
+  color: var(--dark);
 }
 
 .servicecards-container {
@@ -20,6 +26,10 @@
   color: var(--blue);
   text-align: center;
   font-size: 1.5rem;
+}
+
+.services-side-text h3 {
+  font-family: var(--header-text);
 }
 
 @media (max-width: 650px) {

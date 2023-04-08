@@ -8,16 +8,16 @@ const HeroSection = () => {
   return (
     <div className="hero-container">
       <div className="hero-txt-container">
-        <h1 className="hero-header title-text gradient-text">
+        <h1 className="hero-header gradient-text">
           creating fun digital experiences
         </h1>
-        <div className="hero-subtext content-text">
+        <div className="hero-subtext">
           <p>
             we're a web development team specializing in fast, unique websites
           </p>
         </div>
 
-        <button className="hero-button content-text">find out how</button>
+        <button className="hero-button">find out how</button>
       </div>
 
       {/* Images */}

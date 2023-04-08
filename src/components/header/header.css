@@ -7,6 +7,10 @@
   margin-inline: auto;
 }
 
+.desktop-links-container {
+  font-family: var(--header-text);
+}
+
 .link-item {
   text-decoration: none;
   margin-inline: 1.5rem;

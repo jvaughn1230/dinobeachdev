@@ -36,8 +36,8 @@ const ServiceSection = () => {
   return (
     <div className="servicesection-container">
       <div>
-        <h3 className="content-text">services</h3>
-        <h2 className="title-text services-text ">
+        <h3 className="servicessection__header">services</h3>
+        <h2 className="services-text ">
           we like to create <span className="gradient-text">pretty</span>{" "}
           websites that work <span className="gradient-text">fast</span>
         </h2>
@@ -46,9 +46,7 @@ const ServiceSection = () => {
         <ServiceCard />
         <ServiceCard />
         <div className="services-side-text ">
-          <h3 className="title-text">
-            Need something more custom? Tell us more
-          </h3>
+          <h3>Need something more custom? Tell us more</h3>
         </div>
         <ServiceCard />
         <ServiceCard />

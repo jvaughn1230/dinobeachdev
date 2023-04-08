@@ -7,17 +7,20 @@
 }
 
 .hero-header {
-  font-size: clamp(2.25rem, 6.25vw, 96px);
+  font-size: var(--xxl-text);
   line-height: 1;
   font-weight: 800;
   padding-top: 0.75rem;
   margin: 0;
+  font-family: var(--header-text);
 }
 
 .hero-subtext {
   padding: 0.5rem;
   font-size: 24px;
   width: 90%;
+  color: var(--dark);
+  font-family: var(--content-text);
 }
 
 .hero-text-container {
@@ -32,6 +35,8 @@
   border-radius: 9999px;
   border-style: none;
   font-weight: 300;
+  color: var(--dark);
+  font-family: var(--content-text);
 }
 
 .hero-img {

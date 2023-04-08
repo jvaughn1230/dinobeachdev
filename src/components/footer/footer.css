@@ -7,6 +7,7 @@
   align-items: center;
   color: var(--cream);
   padding-inline: 5rem;
+  font-family: var(--title-text);
   /* position: fixed;
   bottom: 0; */
 }

@@ -9,7 +9,7 @@ const ServiceCard = () => {
         <h4 className="servicecard-packagename">Temp Title</h4>
       </div>
       <div className="servicecard-main-container">
-        <h2 className="title-text servicecard-title ">Title</h2>
+        <h2 className="servicecard-title ">Title</h2>
         <p>Description</p>
         <h3>useCase</h3>
       </div>
