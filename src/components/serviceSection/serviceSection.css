@@ -1,0 +1,39 @@
+.services-text {
+  color: var(--blue);
+  font-size: 3rem;
+  line-height: 1;
+  padding-top: 0.75rem;
+  font-family: var(--header-text);
+}
+
+servicessection__header {
+  font-family: var(--content-text);
+  color: var(--dark);
+}
+
+.servicecards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.services-side-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  color: var(--blue);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.services-side-text h3 {
+  font-family: var(--header-text);
+}
+
+@media (max-width: 650px) {
+  .services-side-text {
+    order: 5;
+  }
+}

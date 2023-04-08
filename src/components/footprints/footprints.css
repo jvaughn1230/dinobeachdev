@@ -4,6 +4,8 @@
   margin-top: 5.2083vw;
   justify-content: space-between;
   max-height: 1rem;
+  position: relative;
+  z-index: -5;
 }
 
 .dinoprint {

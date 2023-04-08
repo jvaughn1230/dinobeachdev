@@ -1,0 +1,36 @@
+.blogsection {
+  margin-bottom: 7rem;
+  position: relative;
+}
+
+.blogsection h2 {
+  color: var(--blue);
+  font-size: var(--lg-text);
+  font-family: var(--header);
+}
+
+.blogsection img {
+  height: 6rem;
+  position: absolute;
+  left: 24.5rem;
+  top: 3rem;
+  transform: rotate(-30deg);
+  z-index: 10;
+}
+
+.blogsection__posts {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 900px) {
+  .blogsection__posts {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .blogsection img {
+    display: none;
+  }
+}

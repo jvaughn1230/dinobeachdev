@@ -7,11 +7,26 @@
   --blue: #3c97be;
   --dark: #5d6567;
   --yellow: #ffde9d;
+
+  /* Fonts */
+  --header-text: "Aclonica", sans-serif;
+  --content-text: "ABeeZee", sans-serif;
+
+  /* Font Sizes */
+  --xxl-text: clamp(2.25rem, 6.25vw, 96px);
+  --xl-text: clamp(1.5rem, 4.6875vw, 72px);
+  --lg-text: clamp(1.5rem, 3.125vw, 48px);
 }
 
 body {
   margin: 0;
   padding: 0;
+  border-top-style: solid;
+  border-top-width: 15px;
+  border-image: linear-gradient(to right, #eda9b2, #23b4d9) 1;
+
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -27,28 +42,14 @@ html {
   max-width: 80rem;
 }
 
-/* Fonts and text sizing */
-.title-text {
-  font-family: "Aclonica", sans-serif;
-}
-
-.content-text {
-  font-family: "ABeeZee", sans-serif;
-  color: var(--dark);
-}
-
 .gradient-text {
   background: -webkit-linear-gradient(#eda9b2, #23b4d9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.page-heading {
-  font-size: clamp(1.5rem, 4.6875vw, 72px);
-}
-
-.sub-heading {
-  font-size: clamp(1.5rem, 3.125vw, 48px);
+.gradient-bg {
+  background: -webkit-linear-gradient(#eda9b2, #23b4d9);
 }
 
 @media (max-width: 750px) {
