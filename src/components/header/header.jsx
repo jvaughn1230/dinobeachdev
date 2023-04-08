@@ -11,7 +11,7 @@ import wavesMenu from "../../images/waves.svg";
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <head className="header-container">
+    <div className="header-container">
       <img src={logo} alt="DinoBeach Log" className="header-logo" width="180" />
       <img
         src={wavesMenu}
@@ -25,7 +25,7 @@ const Header = () => {
         <Link to="/about" className="link-item">
           About
         </Link>
-        <Link to={"/contact"} className="link-item">
+        <Link to="/contact" className="link-item">
           Contact
         </Link>
         <Link to="/services" className="link-item">
@@ -49,7 +49,7 @@ const Header = () => {
           <Link to="/about" className="link-item">
             About
           </Link>
-          <Link to={"/contact"} className="link-item">
+          <Link to="/contact" className="link-item">
             Contact
           </Link>
           <Link to="/services" className="link-item">
@@ -60,7 +60,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
-    </head>
+    </div>
   );
 };
 
