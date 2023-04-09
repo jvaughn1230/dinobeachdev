@@ -1,0 +1,7 @@
+.contactpg {
+  display: flex;
+}
+
+.contactpg__left {
+  max-width: 33vw;
+}
