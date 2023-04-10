@@ -1,5 +1,6 @@
 .contactpg {
   display: flex;
+  padding-bottom: 3rem;
 }
 
 .contactpg__left {

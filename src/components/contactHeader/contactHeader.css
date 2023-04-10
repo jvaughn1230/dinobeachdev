@@ -1,3 +1,17 @@
 .contactpg__header {
-  max-width: 33%;
+  max-width: 40%;
+}
+
+.contactpg__header h2 {
+  font-family: var(--header-text);
+  font-size: clamp(0.75rem, 4.6875vw, 72px);
+  font-weight: 800;
+}
+
+.contact__print1,
+.contact__print2,
+.contact__print3,
+.contact__print4 {
+  width: 4vw;
+  position: relative;
 }

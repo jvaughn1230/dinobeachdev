@@ -1,7 +1,45 @@
 .mailer__container {
-  margin: auto;
-  /* Margin-left: 2.5rem */
-  /* margin-top: 3rem */
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  width: 100%;
+  margin-left: 2.5rem;
+  margin-top: 3rem;
+}
+
+.mailer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.mailer input,
+textarea,
+select {
+  background-color: var(--yellow);
+  font-family: var(--content-text);
+  border-radius: 0.375rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.mailer input {
+  height: 4rem;
+}
+
+.mailer select {
+  grid-column: span 2;
+}
+
+.mailer textarea {
+  height: 16rem;
+  grid-column: span 2;
+}
+
+.contact__submit {
+  grid-column-start: 2;
+  padding: 1em;
+  border-radius: 0.25rem;
+  font-weight: 800;
+  font-family: var(--header-text);
+  font-size: 1.875rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
