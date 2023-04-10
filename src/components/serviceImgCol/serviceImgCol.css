@@ -1,0 +1,43 @@
+.pricingpg__beachImg {
+  width: 25vw;
+  border-top-right-radius: 45%;
+  border-top-left-radius: 45%;
+  transform: scale(0.9);
+  position: relative;
+}
+
+.pricingpg__stamp {
+  position: absolute;
+  width: 12.4349vw;
+  z-index: 10;
+}
+
+.servicespg__col3 h4 {
+  font-family: var(--content-text);
+  font-size: clamp(1rem, 2.3438vw, 36px);
+  line-height: 1.75;
+}
+
+.servicespg__col3 h5 {
+  color: var(--pink);
+  font-size: clamp(1rem, 2.3438vw, 36px);
+  /* line-height: 2.5rem; */
+  font-family: var(--title-text);
+}
+
+.pricing-arrow {
+  border-radius: 9999px;
+  height: 5rem;
+  width: 5.2083vw;
+  background-color: #ffde9d;
+  color: var(--dark);
+  padding: 0.5rem;
+}
+
+.pricing-arrow:hover {
+  transform: scale(1.1);
+}
+
+.pricing-row2 {
+  display: flex;
+}
