@@ -1,0 +1,9 @@
+.serviceDeatils__container {
+}
+
+.serviceDetails__container p {
+  font-family: var(--content-text);
+  color: var(--dark);
+  font-weight: 700;
+  font-size: clamp(1rem, 1.3021vw, 1.5rem);
+}
