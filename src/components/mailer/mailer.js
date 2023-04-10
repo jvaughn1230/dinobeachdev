@@ -1,4 +1,6 @@
 import React, { useRef, useState } from "react";
+
+import "./mailer.css";
 import emailjs from "@emailjs/browser";
 
 const Mailer = () => {
@@ -48,11 +50,7 @@ const Mailer = () => {
 
   return (
     <div className="mailer__container">
-      <form
-        onSubmit={sendEmail}
-        ref={form}
-        className="grid grid-cols-1 md:grid-cols-2 gap-4"
-      >
+      <form onSubmit={sendEmail} ref={form} className="mailer">
         <input
           className="inputStyles"
           type="text"
@@ -112,7 +110,7 @@ const Mailer = () => {
         <input
           type="submit"
           value="send"
-          className="ml-auto md:mt-8 md:col-start-2 p-2 md:p-4 w-24 md:w-36 md:text-3xl title-text gradient-text font-extrabold shadow-lg rounded"
+          className="contact__submit gradient-text"
         />
       </form>
     </div>
