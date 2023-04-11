@@ -6,8 +6,7 @@ const BlogCard = () => {
     <div className="blogcard gradient-bg ">
       <div className="background">
         <div className="blogcard__content">
-          <h3>Blog Title</h3>
-          <p>Blog Subtitle</p>
+          <h3>Create Pary Games with Express.js and Socket.io</h3>
         </div>
       </div>
     </div>

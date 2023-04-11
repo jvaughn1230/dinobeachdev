@@ -1,0 +1,10 @@
+.newPosts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.agedPosts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
