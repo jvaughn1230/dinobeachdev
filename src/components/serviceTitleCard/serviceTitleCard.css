@@ -1,10 +1,15 @@
 /* Need to add margins of flex Col with justify */
+.serviceTitleCard {
+  min-width: 480px;
+  margin-bottom: 3rem;
+}
 
 .activeTitle {
   color: pink;
   font-weight: 700;
   font-size: clamp(1.5rem, 3.125vw, 48px);
   font-family: var(--header-text);
+  text-align: left;
 }
 
 .inactiveTitle {
@@ -17,8 +22,4 @@
 .inactiveTitle:hover {
   color: var(--pink);
   transform: scale(1.1);
-}
-
-.serviceTitleCard {
-  min-width: 33%;
 }

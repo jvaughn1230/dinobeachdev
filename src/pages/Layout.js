@@ -19,8 +19,10 @@ const pageStyles = {
 const Layout = () => {
   return (
     <div style={pageStyles}>
-      <Header />
-      <Outlet />
+      <div className="page-container">
+        <Header />
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );

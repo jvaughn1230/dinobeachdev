@@ -1,10 +1,9 @@
 .header-container {
-  padding: 1.25rem;
+  padding: 1.25rem 0 1.25rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 80rem;
-  margin-inline: auto;
 }
 
 .desktop-links-container {
