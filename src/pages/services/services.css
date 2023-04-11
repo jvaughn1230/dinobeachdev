@@ -1,12 +1,12 @@
 .servicespg {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 1.5rem;
 }
 
 servicespg__titlecard-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .servicespg-col {

@@ -7,7 +7,7 @@ import ContactHeader from "../../components/contactHeader/contactHeader";
 
 const Contact = () => {
   return (
-    <div className="page-container contactpg">
+    <div className="contactpg">
       <ContactHeader />
       <Mailer />
     </div>

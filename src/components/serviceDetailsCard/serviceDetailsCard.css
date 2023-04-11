@@ -1,4 +1,5 @@
 .serviceDeatils__container {
+  padding-top: 1em;
 }
 
 .serviceDetails__container p {
@@ -6,4 +7,5 @@
   color: var(--dark);
   font-weight: 700;
   font-size: clamp(1rem, 1.3021vw, 1.5rem);
+  margin-left: 0.25em;
 }

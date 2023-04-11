@@ -93,8 +93,12 @@ const Mailer = () => {
           className={`$"inputStyles" col-span-1 md:col-span-2`}
         >
           <optgroup className="inputStyles">
-            <option value="test">test</option>
-            <option value="test2">test2</option>
+            <option value="weekend getaway">Weekend Getaway</option>
+            <option value="day at dinobeach">Day at Dino Beach</option>
+            <option value="ddinofluencer">Dinofluencer</option>
+            <option value="dinoland">Dinoland</option>
+            <option value="build a beach">Build a beach</option>
+            <option value="custom">More Custom</option>
           </optgroup>
         </select>
 

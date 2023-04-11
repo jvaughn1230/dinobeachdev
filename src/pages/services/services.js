@@ -32,7 +32,7 @@ const Services = () => {
   );
 
   return (
-    <div className="page-container servicespg">
+    <div className=" servicespg">
       <div className="servicespg__titlecard-container">
         {serviceData.map(newServiceTitleCard)}
       </div>

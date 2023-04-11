@@ -1,10 +1,10 @@
 .contactpg__header {
-  max-width: 40%;
+  max-width: 35%;
 }
 
 .contactpg__header h2 {
   font-family: var(--header-text);
-  font-size: clamp(0.75rem, 4.6875vw, 72px);
+  font-size: clamp(24px, 4.6875vw, 72px);
   font-weight: 800;
 }
 
@@ -14,4 +14,47 @@
 .contact__print4 {
   width: 4vw;
   position: relative;
+}
+
+.contact__print1 {
+  rotate: 125deg;
+  left: 7vw;
+  bottom: 3vw;
+}
+
+.contact__print2 {
+  rotate: 90deg;
+  left: 7vw;
+  top: 2vw;
+}
+
+.contact__print3 {
+  rotate: 70deg;
+  left: 10vw;
+  bottom: 1vw;
+}
+
+.contact__print4 {
+  rotate: 50deg;
+  left: 12vw;
+  bottom: 4.5vw;
+}
+
+@media (max-width: 900px) {
+  .contactpg__header {
+    max-width: 80vw;
+  }
+
+  .contact__print1,
+  .contact__print2,
+  .contact__print3,
+  .contact__print4 {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .contactpg__header h2 {
+    font-size: 24px;
+  }
 }

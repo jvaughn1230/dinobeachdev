@@ -8,7 +8,7 @@ import BlogSection from "../../components/blogSection/blogSection";
 
 const Home = () => {
   return (
-    <div className="page-container">
+    <div className="">
       <HeroSection />
       <Footprints />
       <ServiceSection />
