@@ -1,13 +1,13 @@
 .footer-container {
   margin-bottom: 0;
   background-color: var(--pink);
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--cream);
   font-family: var(--title-text);
-  padding-inline: 7.765vw;
+  padding: 0 7.765vw;
   /* position: fixed;
   bottom: 0; */
 }
