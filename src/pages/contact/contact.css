@@ -6,3 +6,9 @@
 .contactpg__left {
   max-width: 33vw;
 }
+
+@media (max-width: 900px) {
+  .contactpg {
+    flex-direction: column;
+  }
+}

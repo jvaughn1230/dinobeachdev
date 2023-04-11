@@ -30,7 +30,7 @@
 
 /* Mobile CSS */
 
-@media (max-width: 650px) {
+@media (max-width: 900px) {
   .waves-menu {
     display: inline-block;
     width: 4rem;
