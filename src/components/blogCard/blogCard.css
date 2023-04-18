@@ -1,5 +1,6 @@
 .blogcard {
-  height: 51.4745vh;
+  /* height: 51.4745vh; */
+  height: 23vw;
   width: 23vw;
   border-radius: 0.75rem;
   margin-top: 1.5em;
@@ -43,6 +44,8 @@
 
 @media (max-width: 900px) {
   .blogcard {
+    width: 50vw;
+    height: 50vw;
     flex-basis: 48%;
   }
 }
@@ -50,5 +53,7 @@
 @media (max-width: 600px) {
   .blogcard {
     flex-basis: 80%;
+    height: 50vw;
+    width: 50vw;
   }
 }

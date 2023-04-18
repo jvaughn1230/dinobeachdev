@@ -12,7 +12,15 @@ const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="header-container">
-      <img src={logo} alt="DinoBeach Log" className="header-logo" width="180" />
+      <Link to="/">
+        <img
+          src={logo}
+          alt="DinoBeach Log"
+          className="header-logo"
+          width="180"
+        />
+      </Link>
+
       <img
         src={wavesMenu}
         alt="waves menu"
@@ -46,16 +54,32 @@ const Header = () => {
             onClick={() => setToggleMenu(false)}
           />
 
-          <Link to="/about" className="link-item">
+          <Link
+            to="/about"
+            className="link-item"
+            onClick={() => setToggleMenu(false)}
+          >
             About
           </Link>
-          <Link to="/contact" className="link-item">
+          <Link
+            to="/contact"
+            className="link-item"
+            onClick={() => setToggleMenu(false)}
+          >
             Contact
           </Link>
-          <Link to="/services" className="link-item">
+          <Link
+            to="/services"
+            className="link-item"
+            onClick={() => setToggleMenu(false)}
+          >
             Services
           </Link>
-          <Link to="/blog" className="link-item">
+          <Link
+            to="/blog"
+            className="link-item"
+            onClick={() => setToggleMenu(false)}
+          >
             Blog
           </Link>
         </div>
