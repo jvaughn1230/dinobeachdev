@@ -44,3 +44,9 @@
 .hidden {
   display: none;
 }
+
+@media (max-width: 600px) {
+  .featuredBlog__container {
+    flex-basis: 80%;
+  }
+}
