@@ -9,3 +9,34 @@
   font-size: clamp(1rem, 1.3021vw, 1.5rem);
   margin-left: 0.4em;
 }
+
+.pricingContainer__tablet {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .pricingContainer__tablet {
+    display: flex;
+  }
+
+  .pricingArrow__tablet {
+    border-radius: 9999px;
+    height: 7vw;
+    width: 7vw;
+    background-color: #ffde9d;
+    color: var(--dark);
+    padding: 0.5rem;
+    margin-left: 3rem;
+    align-self: center;
+  }
+
+  .pricingArrow__tablet:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 600px) {
+  .serviceDetails__container {
+    display: none;
+  }
+}

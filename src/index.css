@@ -54,6 +54,6 @@ html {
 
 @media (max-width: 750px) {
   .page-container {
-    max-width: 28rem;
+    /* max-width: 28rem; */
   }
 }

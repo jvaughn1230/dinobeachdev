@@ -11,3 +11,9 @@ servicespg__titlecard-container {
 
 .servicespg-col {
 }
+
+@media (max-width: 800px) {
+  .servicespg {
+    justify-content: space-around;
+  }
+}
