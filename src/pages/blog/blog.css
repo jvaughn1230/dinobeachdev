@@ -8,3 +8,19 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+@media (max-width: 600px) {
+  .agedPosts {
+    justify-content: center;
+  }
+
+  .newPosts {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .newPosts:last-child {
+    margin-bottom: 24px;
+  }
+}
