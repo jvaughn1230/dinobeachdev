@@ -1,7 +1,7 @@
 /* Need to add margins of flex Col with justify */
 .serviceTitleCard {
-  min-width: 480px;
   margin-bottom: 3rem;
+  min-width: 31.25vw;
 }
 
 .activeTitle {
@@ -22,4 +22,99 @@
 .inactiveTitle:hover {
   color: var(--pink);
   transform: scale(1.1);
+}
+
+.servicesDetails__mobile {
+  display: none;
+}
+
+.showMobileDetails,
+.hideMobileDetails {
+  display: none;
+}
+
+.activeToggle,
+.inactiveToggle {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .serviceDetails__mobile {
+    display: block;
+  }
+
+  .activeTitle {
+    font-size: 2rem;
+    min-width: 40vw;
+  }
+
+  .servicespg__titlecard-container {
+    width: 50vw;
+    min-height: 410px;
+  }
+}
+
+@media (max-width: 600px) {
+  .servicesDetails__mobile {
+    display: block;
+  }
+
+  .servicespg__titlecard-container {
+    width: 80vw;
+  }
+
+  .activeTitle {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .pricing-arrow__mobile {
+    height: 10%;
+    width: 10%;
+    border-radius: 9999px;
+    background-color: #ffde9d;
+    padding: 0.25rem;
+    margin-left: 2em;
+  }
+
+  .pricing-arrow__mobile:hover {
+    transform: scale(1.1);
+  }
+
+  .showMobileDetails {
+    display: block;
+  }
+
+  .mobile-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-title {
+    display: flex;
+  }
+
+  .activeToggle,
+  .inactiveToggle {
+    align-self: center;
+    display: block;
+    margin-left: 0.5em;
+  }
+
+  .activeToggle {
+    rotate: 90deg;
+    transition: rotate 0.25s;
+  }
+
+  .inactiveToggle {
+    transition: 0.25s;
+  }
+
+  .serviceTitleCard {
+    margin-bottom: 0;
+  }
+
+  .pricingContainer__mobile {
+    display: flex;
+  }
 }

@@ -1,12 +1,12 @@
 .services-text {
   color: var(--blue);
-  font-size: 3rem;
+  font-size: clamp(1rem, 1.3021vw, 1.5rem);
   line-height: 1;
   padding-top: 0.75rem;
   font-family: var(--header-text);
 }
 
-servicessection__header {
+.servicessection__header {
   font-family: var(--content-text);
   color: var(--dark);
 }
