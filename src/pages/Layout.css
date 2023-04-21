@@ -1,0 +1,36 @@
+.layout__container {
+  color: #5d6567;
+  padding: 0;
+  font-family: -apple-system, Roboto, sans-serif, serif;
+  border-top-width: 15;
+  border-top-style: solid;
+  border-image: linear-gradient(to right, #eda9b2, #23b4d9) 1;
+  z-index: 2;
+
+  background-color: #faf6ee;
+}
+
+/* 
+.layout__container::before {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+
+  background: repeating-conic-gradient(
+      #0003 0.000001% transparent 75%,
+      #fff0 0.00005% transparent 75%,
+      #fff0 0.00035% transparent 75%,
+      #fff0 0.00005% transparent 75%
+    ),
+    repeating-conic-gradient(
+      #fff2 0.00002% transparent 75%,
+      #fff0 0.00008% transparent 75%,
+      #fff0 0.0008% transparent 75%,
+      #fff0 0.00008% transparent 75%
+    );
+  opacity: 0.5;
+  filter: blur(100px);
+} 
+*/
