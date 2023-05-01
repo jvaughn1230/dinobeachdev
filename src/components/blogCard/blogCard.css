@@ -16,7 +16,9 @@
   width: 97.5%;
   border-radius: 0.75rem;
   align-self: center;
+  /* background-color: transparent; */
   background-color: var(--cream);
+
   display: flex;
   justify-content: center;
   align-items: center;

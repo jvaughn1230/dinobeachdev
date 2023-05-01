@@ -1,12 +1,12 @@
 import React from "react";
 import "./blogCard.css";
 
-const BlogCard = () => {
+const BlogCard = (post) => {
   return (
     <div className="blogcard gradient-bg ">
       <div className="background">
         <div className="blogcard__content">
-          <h3>Create Pary Games with Express.js and Socket.io</h3>
+          <h3>{post.title}</h3>
         </div>
       </div>
     </div>
