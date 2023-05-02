@@ -54,6 +54,14 @@ html {
   background: -webkit-linear-gradient(#eda9b2, #23b4d9);
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline;
+}
+
 @media (max-width: 750px) {
   .page-container {
     /* max-width: 28rem; */
