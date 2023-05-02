@@ -18,7 +18,11 @@ const BlogSection = () => {
   console.log(posts);
 
   const blogPosts = posts.map((post) => (
-    <BlogCard title={post.attributes.title} key={post.id} />
+    <BlogCard
+      title={post.attributes.title}
+      description={post.attributes.description}
+      key={post.id}
+    />
   ));
 
   return (

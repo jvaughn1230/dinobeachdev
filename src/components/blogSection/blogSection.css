@@ -23,6 +23,14 @@
   justify-content: space-around;
 }
 
+/* div div:nth-child(2) {
+  margin-top: 100px;
+} */
+
+.blogsection div:nth-child(2) {
+  margin-top: 100px;
+}
+
 @media (max-width: 900px) {
   .blogsection__posts {
     flex-direction: column;
@@ -32,9 +40,10 @@
   .blogsection h2 {
     text-align: center;
   }
-}
 
-@media (max-width: 900px) {
+  .blogsection div:nth-child(2) {
+    margin-top: 1.5em;
+  }
 }
 
 @media (max-width: 600px) {
