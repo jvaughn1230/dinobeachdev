@@ -15,8 +15,6 @@ const BlogSection = () => {
       .catch((error) => console.log(error));
   }, []);
 
-  console.log(posts);
-
   const blogPosts = posts.map((post) => (
     <BlogCard
       title={post.attributes.title}
