@@ -6,6 +6,8 @@ import BlogCard from "../../components/blogCard/blogCard";
 
 import "./blog.css";
 
+// image.data.attributes.name = jpeg file
+
 const Blog = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
@@ -21,13 +23,17 @@ const Blog = () => {
   const featuredPosts = posts.slice(0, 2);
   const olderPosts = posts.slice(2);
 
+  console.log(featuredPosts);
+
   // Mapping Blog Posts
   const featuredBlogPosts = featuredPosts.map((post) => (
     <FeaturedBlogCard
       title={post.attributes.title}
       description={post.attributes.description}
-      image={post.attributes.image}
+      body={post.attributes.body}
+      id={post.id}
       key={post.id}
+      img={post.attributes.image?.data?.attributes?.url}
     />
   ));
 
@@ -35,7 +41,10 @@ const Blog = () => {
     <BlogCard
       title={post.attributes.title}
       description={post.attributes.description}
+      body={post.attributes.body}
+      id={post.id}
       key={post.id}
+      img={post.attributes.image?.data?.attributes?.url}
     />
   ));
 
