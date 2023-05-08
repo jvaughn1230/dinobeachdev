@@ -1,4 +1,4 @@
-.featuredBlog__container {
+.featuredBlogCard {
   border-radius: 0.75rem;
   height: 42.8954vh;
   width: 40.1042vw;
@@ -7,17 +7,55 @@
   align-items: center;
 }
 
-.featuredBlog__content {
+/* div for cream color ove gradient */
+.cream-bg {
+  background-color: var(--cream);
+}
+.featuredblogcard-layer2 {
   height: 97.5%;
   width: 97.5%;
   border-radius: 0.75rem;
-  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* div for rounding background image */
+.featuredblogcard-layer3 {
+  height: 95%;
+  width: 95%;
+  border-radius: 0.75rem;
+}
+
+/* Div for image */
+.featuredblogcard-bg {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.75rem;
+  opacity: 0.3;
+}
+
+/* Content Div - outside of image div due to opacity issue */
+.featuredBlog__content {
   display: flex;
   flex-direction: column;
   padding-inline: 1.5em;
+
+  z-index: 2;
+  position: absolute;
+
+  /* !!! If We change the size of any of the above divs need to adjust the height and width calc below 
+  height: 42.8954vh*0.975*.95
+  width: 40.1042vw*0.975*.95
+  */
+  max-width: 37.14651525vw;
+  max-height: 39.73186425vw;
+  top: -1vh;
 }
 
-.featuredBlog__content:hover {
+.cream-text {
   background: transparent;
   color: #faf6ee;
 }
@@ -25,6 +63,7 @@
 .featuredBlog__content h2 {
   font-size: clamp(1.5rem, 3.125vw, 48px);
   font-family: var(--header-text);
+  font-weight: 700;
 }
 
 .featuredBlog__content p {
@@ -39,10 +78,12 @@
   align-self: flex-end;
   justify-self: end;
   margin: 1rem;
+  position: absolute;
+  top: 30vh;
 }
 
 @media (max-width: 600px) {
-  .featuredBlog__container {
+  .featuredBlogCard {
     flex-basis: 80%;
   }
 }
