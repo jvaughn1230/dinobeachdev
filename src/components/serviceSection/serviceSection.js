@@ -1,38 +1,26 @@
 import React from "react";
 
 import ServiceCard from "../serviceCard/serviceCard";
+import { serviceData } from "../../constants/serviceData";
 
 import "./serviceSection.css";
 
-const serviceData = [
-  {
-    packageName: "Day at Dino Beach",
-    title: "Single landing page",
-    description:
-      "Everything your customers need to know on a single page, straight to the point",
-    useCase: "Perfect for: product ads, restaurants ",
-  },
-  {
-    packageName: "Weekend Getaway",
-    title: "Multi-page Brochure Site",
-    description: "Some text describing it goes here",
-    useCase: "Perfect for: small businesses",
-  },
-  {
-    packageName: "Dinofluencer",
-    title: "Blogging Platform",
-    description: "Some text describing it goes here",
-    useCase: "Perfect for: fashion, food, lifestyle blogs, podcast site",
-  },
-  {
-    packageName: "Dinoland",
-    title: "E-Commerce Site",
-    description: "Some text describing it goes here",
-    useCase: "Perfect for: small and large online stores",
-  },
-];
-
 const ServiceSection = () => {
+  console.log("data:", serviceData);
+  const firstRowData = serviceData.slice(0, 2);
+  const secondRowData = serviceData.slice(2, 4);
+
+  const newServiceCard = (service) => {
+    return (
+      <ServiceCard
+        key={service.id}
+        title={service.title}
+        description={service.description}
+        details={service.details}
+      />
+    );
+  };
+
   return (
     <div className="servicesection-container">
       <div>
@@ -43,13 +31,11 @@ const ServiceSection = () => {
         </h2>
       </div>
       <div className="servicecards-container">
-        <ServiceCard />
-        <ServiceCard />
+        {firstRowData.map(newServiceCard)}
         <div className="services-side-text ">
           <h3>Need something more custom? Tell us more</h3>
         </div>
-        <ServiceCard />
-        <ServiceCard />
+        {secondRowData.map(newServiceCard)}
       </div>
     </div>
   );
