@@ -2,16 +2,18 @@ import React from "react";
 
 import "./serviceCard.css";
 
-const ServiceCard = () => {
+const ServiceCard = (service) => {
   return (
     <div className="service-card-container">
       <div className="service-bubble gradient-bg">
-        <h4 className="servicecard-packagename">Temp Title</h4>
+        <div className="servicecard-packagename">
+          <h4>{service.title}</h4>
+        </div>
       </div>
       <div className="servicecard-main-container">
-        <h2 className="servicecard-title ">Title</h2>
-        <p>Description</p>
-        <h3>useCase</h3>
+        <h2 className="servicecard-title ">{service.title}</h2>
+        <p>{service.description}</p>
+        <h3>{service.details}</h3>
       </div>
     </div>
   );

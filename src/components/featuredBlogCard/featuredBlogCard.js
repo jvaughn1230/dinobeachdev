@@ -6,17 +6,6 @@ import { Link } from "react-router-dom";
 const FeaturedBlogCard = (post) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  //??? TODO LIST
-  //mobile needs work now
-
-  //layers:
-  //layer 1(bottom) - gradient background for border & hover
-  //layer 2: cream layer - transparent when hover === true
-  //layer 3: 2 divs :
-  // empty div for rounding background image
-  //div for content
-  //layer 4: image background layer (for tr)
-
   return (
     <Link to={`/blog/${post.id}`} state={{ post }} className="blog-link">
       <div className="featuredBlogCard gradient-bg">

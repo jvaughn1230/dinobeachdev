@@ -3,6 +3,8 @@ export const serviceData = [
     id: 1,
     title: "Weekend Getaway",
     price: 200,
+    description:
+      "Everything your customers need to know on a single page, straight to the point",
     details: [
       "Details 1",
       "Contact Forms & Interactions",
@@ -15,6 +17,7 @@ export const serviceData = [
     id: 2,
     title: "Day at Dino Beach",
     price: 300,
+    description: "Some text describing it goes here",
     details: [
       "Details 2",
       "Contact Forms & Interactions",
@@ -27,6 +30,7 @@ export const serviceData = [
     id: 3,
     title: "Dinfluencer",
     price: 400,
+    description: "Some text describing it goes here",
     details: [
       "Details 3",
       "Contact Forms & Interactions",
@@ -39,6 +43,7 @@ export const serviceData = [
     id: 4,
     title: "Dinoland",
     price: 500,
+    description: "Some text describing it goes here",
     details: [
       "Details 4",
       "Contact Forms & Interactions",
@@ -51,6 +56,7 @@ export const serviceData = [
     id: 5,
     title: "Build a Beach",
     price: 600,
+    description: "Some text describing it goes here",
     details: [
       "Details 5",
       "Contact Forms & Interactions",
