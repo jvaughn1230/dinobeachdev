@@ -23,13 +23,11 @@ const ServiceSection = () => {
 
   return (
     <div className="servicesection-container">
-      <div sclassName="servicessection__headerContainer">
-        <h3 className="servicessection__header">services</h3>
-        <h2 className="services-text ">
-          we like to create <span className="gradient-text">pretty</span>{" "}
-          websites that work <span className="gradient-text">fast</span>
-        </h2>
-      </div>
+      <h3 className="servicessection__header">services</h3>
+      <h2 className="services-text ">
+        we like to create <span className="gradient-text">pretty</span> websites
+        that work <span className="gradient-text">fast</span>
+      </h2>
       <div className="servicecards-container">
         {firstRowData.map(newServiceCard)}
 

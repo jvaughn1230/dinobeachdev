@@ -15,8 +15,6 @@ const BlogSection = () => {
       .catch((error) => console.log(error));
   }, []);
 
-  console.log(posts);
-
   const blogPosts = posts.map((post) => (
     <div className="homeblogcard">
       <BlogCard
