@@ -1,0 +1,196 @@
+.aboutpage {
+  position: relative;
+}
+
+.aboutpagerow1,
+.aboutpagerow2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--lg-text);
+}
+
+.aboutpagerow2 {
+  margin-bottom: 4.5rem;
+}
+
+.aboutpage-header {
+  max-width: 50%;
+  font-family: var(--header-text);
+}
+.aboutpage-summary {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutpage-summary h3 {
+  font-family: var(--header-text);
+}
+
+.aboutpage-summary p {
+  color: var(--dark);
+  font-size: var(--md-text);
+  line-height: 1.5;
+  font-family: var(--content-text);
+}
+
+.aboutprint {
+  position: absolute;
+  height: 4rem;
+  width: 4.1667vw;
+}
+
+.aboutpage-posts {
+  display: flex;
+  background-color: #fadcd2;
+  justify-content: space-around;
+  margin-inline: -7.765vw;
+  position: relative;
+  padding-block: 3rem;
+}
+
+.aboutpage-posts img {
+  height: 6rem;
+  position: absolute;
+  rotate: -45deg;
+  left: 3.2552vw;
+  z-index: var(--layer2);
+}
+
+.aboutblogcard:nth-child(3) {
+  margin-top: 100px;
+}
+
+.aboutpage-bottomrow {
+  display: flex;
+  justify-content: center;
+  padding: 4em;
+  text-decoration: none;
+}
+
+.aboutpage-bottomrow h2 {
+  margin-right: 5em;
+  font-size: var(--lg-text);
+  font-family: var(--header-text);
+}
+
+.contact-button {
+  background-color: var(--yellow);
+  border-radius: 30px;
+  height: 5em;
+  width: 10em;
+  font-size: var(--sm-text);
+  font-weight: 800;
+  color: var(--dark);
+  align-self: center;
+  font-family: var(--content-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  opacity: 0.75;
+}
+
+/* Foot Prints Positioning */
+.aboutprint1 {
+  top: 20px;
+  rotate: 95deg;
+}
+
+.aboutprint2 {
+  top: 90px;
+  left: 3.2552vw;
+  rotate: 115deg;
+}
+
+.aboutprint3 {
+  left: 9.4401vw;
+  top: 30px;
+  rotate: 120deg;
+}
+
+.aboutprint4 {
+  left: 13.0208vw;
+  top: 100px;
+  rotate: 105deg;
+}
+
+.aboutprint5 {
+  left: 22.7865vw;
+  top: 50px;
+  rotate: 90deg;
+}
+
+.aboutprint6 {
+  left: 65.1042vw;
+  rotate: -90deg;
+}
+.aboutprint7 {
+  left: 71.6146vw;
+  top: -45px;
+  rotate: 250deg;
+}
+.aboutprint8 {
+  left: 78.125vw;
+  top: -60px;
+  rotate: 240deg;
+}
+.aboutprint9 {
+  left: 81.3802vw;
+  top: -150px;
+  rotate: 225deg;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .aboutpagerow1,
+  .aboutpagerow2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutpage-header {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .aboutpagerow2 h3 {
+    text-align: center;
+  }
+
+  .aboutpage-summary {
+    max-width: 80%;
+  }
+
+  .aboutpage-posts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutblogcard:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .aboutpage-bottomrow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutpage-bottomrow h2 {
+    margin-right: 0;
+  }
+
+  .contact-button {
+    font-size: 16px;
+  }
+
+  .aboutpage-posts img {
+    top: 50px;
+    left: 15vw;
+  }
+}
