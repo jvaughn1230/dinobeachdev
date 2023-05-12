@@ -7,7 +7,7 @@
 .pricingpg__stamp {
   position: absolute;
   width: 12.4349vw;
-  z-index: 10;
+  z-index: var(--layer2);
   top: 40%;
   left: 65%;
 }

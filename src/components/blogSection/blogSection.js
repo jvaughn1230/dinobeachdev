@@ -9,18 +9,23 @@ const BlogSection = () => {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:1337/api/posts?sort=publishedAt:desc&pagination[limit]=3"
+        "http://localhost:1337/api/posts?sort=publishedAt:desc&pagination[limit]=3&populate=*"
       )
       .then(({ data }) => setPosts(data.data))
       .catch((error) => console.log(error));
   }, []);
 
+  console.log(posts);
+
   const blogPosts = posts.map((post) => (
-    <BlogCard
-      title={post.attributes.title}
-      description={post.attributes.description}
-      key={post.id}
-    />
+    <div className="homeblogcard">
+      <BlogCard
+        title={post.attributes.title}
+        description={post.attributes.description}
+        img={post.attributes.image?.data?.attributes?.url}
+        key={post.id}
+      />
+    </div>
   ));
 
   return (

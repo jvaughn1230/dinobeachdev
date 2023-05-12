@@ -17,6 +17,12 @@
   --xl-text: clamp(1.5rem, 4.6875vw, 72px);
   --lg-text: clamp(1.5rem, 3.125vw, 48px);
   --md-text: clamp(1.25rem, 1.5625vw, 24px);
+
+  /* Z-Indexes */
+  --layer2: 2;
+  --layer3: 3;
+  --layer4: 4;
+  --top-layer: 10;
 }
 
 body {
