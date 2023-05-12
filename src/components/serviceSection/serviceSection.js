@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import ServiceCard from "../serviceCard/serviceCard";
 import { serviceData } from "../../constants/serviceData";
@@ -6,7 +7,6 @@ import { serviceData } from "../../constants/serviceData";
 import "./serviceSection.css";
 
 const ServiceSection = () => {
-  console.log("data:", serviceData);
   const firstRowData = serviceData.slice(0, 2);
   const secondRowData = serviceData.slice(2, 4);
 
@@ -23,7 +23,7 @@ const ServiceSection = () => {
 
   return (
     <div className="servicesection-container">
-      <div>
+      <div sclassName="servicessection__headerContainer">
         <h3 className="servicessection__header">services</h3>
         <h2 className="services-text ">
           we like to create <span className="gradient-text">pretty</span>{" "}
@@ -32,9 +32,13 @@ const ServiceSection = () => {
       </div>
       <div className="servicecards-container">
         {firstRowData.map(newServiceCard)}
-        <div className="services-side-text ">
-          <h3>Need something more custom? Tell us more</h3>
-        </div>
+
+        <Link to="/services" className="services-link">
+          <div className="services-side-text gradient-bg">
+            <h3>Need something more custom? Tell us more</h3>
+          </div>
+        </Link>
+
         {secondRowData.map(newServiceCard)}
       </div>
     </div>

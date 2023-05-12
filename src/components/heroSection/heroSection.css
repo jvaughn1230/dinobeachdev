@@ -23,10 +23,6 @@
   font-family: var(--content-text);
 }
 
-.hero-text-container {
-  z-index: 10;
-}
-
 .hero-button {
   background-color: var(--yellow);
   font-size: clamp(14px, 1.1719vw, 1.125rem);
@@ -49,7 +45,7 @@
 
 .hero-stamp {
   width: 12.4349vw;
-  z-index: 10;
+  z-index: var(--layer2);
   position: absolute;
   right: 40%;
   bottom: 10%;

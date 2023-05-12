@@ -12,8 +12,8 @@ const ServiceCard = (service) => {
       </div>
       <div className="servicecard-main-container">
         <h2 className="servicecard-title ">{service.title}</h2>
-        <p>{service.description}</p>
-        <h3>{service.details}</h3>
+        <p className="servicecard-description">{service.description}</p>
+        <h3 className="servicecard-use">{service.details}</h3>
       </div>
     </div>
   );

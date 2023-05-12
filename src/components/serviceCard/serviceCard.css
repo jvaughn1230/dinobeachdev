@@ -26,19 +26,23 @@
 .servicecard-packagename {
   color: var(--cream);
   transform: rotate(-12deg);
+  display: flex;
+  text-align: center;
+  margin-block: auto;
 }
 
 .servicecard-title {
-  font-size: 1.5rem;
+  font-size: clamp(0.9375rem, 1.3021vw, 1.3125rem);
   font-family: var(--header-text);
 }
 
 .servicecard-description {
-  font-size: 1.25rem;
+  font-size: clamp(0.75rem, 1.0417vw, 1.0313rem);
 }
 
 .servicecard-use {
-  font-size: 0.75rem;
+  /* font-size: 0.75rem; */
+  font-size: clamp(0.7188rem, 1.0417vw, 1.0313rem);
   line-height: 1;
 }
 

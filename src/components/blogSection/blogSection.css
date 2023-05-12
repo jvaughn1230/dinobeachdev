@@ -15,7 +15,7 @@
   left: 24.5rem;
   top: 3rem;
   transform: rotate(-30deg);
-  z-index: 10;
+  z-index: var(--layer3);
 }
 
 .blogsection__posts {
@@ -23,12 +23,14 @@
   justify-content: space-around;
 }
 
-/* div div:nth-child(2) {
-  margin-top: 100px;
-} */
+.blogsection img {
+  position: absolute;
+  right: 3000px;
+}
 
-.blogsection div:nth-child(2) {
+.homeblogcard:nth-child(2) {
   margin-top: 100px;
+  position: relative;
 }
 
 @media (max-width: 900px) {

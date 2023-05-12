@@ -43,7 +43,7 @@
   flex-direction: column;
   padding-inline: 1.5em;
 
-  z-index: 2;
+  z-index: var(--layer2);
   position: absolute;
 
   /* !!! If We change the size of any of the above divs need to adjust the height and width calc below 

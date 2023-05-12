@@ -29,12 +29,14 @@
 .dinobeach-text-line1 {
   font-size: 1.875rem;
   line-height: 2.25rem;
+  margin-block: 0;
 }
 
 .dinobeach-text-line2 {
   font-size: 1.5rem;
   line-height: 2rem;
   text-align: center;
+  margin-block: 0;
 }
 
 .footer-script {

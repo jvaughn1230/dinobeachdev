@@ -61,7 +61,7 @@
   /* border-radius: 0.75rem; */
   display: flex;
   flex-direction: column;
-  z-index: 2;
+  z-index: var(--layer2);
   position: absolute;
   padding-inline: 1.5em;
 }
