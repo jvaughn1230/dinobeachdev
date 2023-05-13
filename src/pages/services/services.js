@@ -5,8 +5,6 @@ import ServiceTitleCard from "../../components/serviceTitleCard/serviceTitleCard
 import ServiceDetailsCard from "../../components/serviceDetailsCard/serviceDetailsCard";
 import ServiceImgCol from "../../components/serviceImgCol/serviceImgCol";
 
-// Need to add details toggle for mobile screens still
-
 const Services = () => {
   const [selectedService, setSelectedService] = useState(serviceData[0].title);
 
@@ -26,10 +24,6 @@ const Services = () => {
       />
     );
   };
-
-  const serviceDetails = serviceData.find(
-    ({ title }) => title === selectedService
-  );
 
   return (
     <div className=" servicespg">

@@ -3,6 +3,7 @@ import "./serviceImgCol.css";
 import stamp from "../../images/stamp_p.svg";
 import beach from "../../images/vintage-beach-short.jpg";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // Need to position stamp once sizing is finalized for columns.
 //Want to create a page container before doing this so that all pages are aligned correctly
@@ -25,8 +26,9 @@ const ServiceImgCol = ({ selectedService, serviceData }) => {
       </div>
       <div className="pricing-row2">
         <h5>{selectedServiceItem.price} USD</h5>
-
-        <FaArrowRight className="pricing-arrow" />
+        <Link to="/contact">
+          <FaArrowRight className="pricing-arrow" />
+        </Link>
       </div>
     </div>
   );

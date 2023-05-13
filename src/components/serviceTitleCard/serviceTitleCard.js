@@ -2,6 +2,7 @@ import React from "react";
 import "./serviceTitleCard.css";
 import { FaArrowRight } from "react-icons/fa";
 import { VscTriangleRight } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 
 const ServiceTitleCard = ({
   service,
@@ -29,6 +30,7 @@ const ServiceTitleCard = ({
               : "inactiveToggle"
           }`}
           size="24px"
+          onClick={() => changeSelectedService(service.title)}
         />
       </div>
 
@@ -43,7 +45,9 @@ const ServiceTitleCard = ({
 
         <div className="pricingContainer__mobile">
           <p>Pricing starts at {service.price} USD</p>
-          <FaArrowRight className="pricing-arrow__mobile" />
+          <Link to="/contact" className="arrowcontainer-mobile">
+            <FaArrowRight className="pricing-arrow__mobile" />
+          </Link>
         </div>
       </div>
     </div>

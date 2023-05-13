@@ -69,12 +69,17 @@
   }
 
   .pricing-arrow__mobile {
-    height: 10%;
-    width: 10%;
+    height: 75%;
+    width: 75%;
     border-radius: 9999px;
     background-color: #ffde9d;
     padding: 0.25rem;
     margin-left: 2em;
+  }
+
+  .arrowcontainer-mobile {
+    display: flex;
+    align-items: center;
   }
 
   .pricing-arrow__mobile:hover {
