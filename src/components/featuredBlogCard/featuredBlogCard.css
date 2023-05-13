@@ -7,10 +7,11 @@
   align-items: center;
 }
 
-/* div for cream color ove gradient */
+/* Layer for cream on hover */
 .cream-bg {
   background-color: var(--cream);
 }
+
 .featuredblogcard-layer2 {
   height: 97.5%;
   width: 97.5%;
@@ -45,14 +46,8 @@
 
   z-index: var(--layer2);
   position: absolute;
-
-  /* !!! If We change the size of any of the above divs need to adjust the height and width calc below 
-  height: 42.8954vh*0.975*.95
-  width: 40.1042vw*0.975*.95
-  */
-  max-width: 37.14651525vw;
-  max-height: 39.73186425vw;
-  top: -1vh;
+  height: 95%;
+  width: 95%;
 }
 
 .cream-text {
@@ -64,6 +59,7 @@
   font-size: clamp(1.5rem, 3.125vw, 48px);
   font-family: var(--header-text);
   font-weight: 700;
+  margin-block-end: 0.25rem;
 }
 
 .featuredBlog__content p {
@@ -77,13 +73,33 @@
   color: #faf6ee;
   align-self: flex-end;
   justify-self: end;
-  margin: 1rem;
   position: absolute;
-  top: 30vh;
+  bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .featuredBlogCard {
+    height: 500px;
+    width: 500px;
+    /* row-gap: 3rem; */
+  }
+
+  .featuredBlog__content h2 {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 600px) {
   .featuredBlogCard {
-    flex-basis: 80%;
+    height: 50vw;
+    width: 50vw;
+  }
+
+  .featuredBlog__content p {
+    display: none;
+  }
+
+  .featuredBlog__content h2 {
+    font-size: 30px;
   }
 }

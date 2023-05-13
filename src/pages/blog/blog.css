@@ -1,6 +1,7 @@
 .newPosts {
   display: flex;
   justify-content: space-between;
+  margin-block: 2rem;
 }
 
 .agedPosts {
@@ -9,18 +10,24 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 600px) {
+.blogpage {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 900px) {
+  .newPosts {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .featuredBlogCard {
+    margin-bottom: 2rem;
+  }
+
   .agedPosts {
     justify-content: center;
   }
-
-  .newPosts {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  .newPosts:last-child {
-    margin-bottom: 24px;
-  }
+}
+@media (max-width: 600px) {
 }

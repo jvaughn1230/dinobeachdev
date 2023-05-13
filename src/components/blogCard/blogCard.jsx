@@ -28,9 +28,9 @@ const BlogCard = (post) => {
               {post.title}
             </h3>
 
-            <p className={isHovered ? "show blogcard__description" : "hide"}>
+            {/* <p className={isHovered ? "show blogcard__description" : "hide"}>
               {post.description}
-            </p>
+            </p> */}
             <FaArrowRight
               className={isHovered ? "show blogcard__arrow" : "hide"}
               size={60}

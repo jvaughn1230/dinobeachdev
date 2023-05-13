@@ -49,7 +49,7 @@ const Blog = () => {
   ));
 
   return (
-    <div className="featuredBlogCard__container">
+    <div className="blogpage">
       <div className="newPosts">{featuredBlogPosts}</div>
       <div className="agedPosts">{regularCards}</div>
     </div>

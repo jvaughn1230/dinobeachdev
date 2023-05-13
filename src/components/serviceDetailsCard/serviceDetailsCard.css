@@ -20,6 +20,12 @@
     display: flex;
   }
 
+  .arrowcontainer__tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .pricingArrow__tablet {
     border-radius: 9999px;
     height: 7vw;
@@ -28,7 +34,6 @@
     color: var(--dark);
     padding: 0.5rem;
     margin-left: 3rem;
-    align-self: center;
   }
 
   .pricingArrow__tablet:hover {

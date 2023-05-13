@@ -46,6 +46,10 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+}
+
 .page-container {
   margin: 0 7.765vw;
   /* max-width: 80rem; */
