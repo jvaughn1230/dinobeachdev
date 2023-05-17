@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ServicesContext } from "../../context/servicesContext";
 import "./serviceTitleCard.css";
 import { FaArrowRight } from "react-icons/fa";
 import { VscTriangleRight } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 
-const ServiceTitleCard = ({
-  service,
-  selectedService,
-  changeSelectedService,
-  serviceData,
-}) => {
+const ServiceTitleCard = (service) => {
+  const { selectedService, selectedServiceItem, setSelectedService } =
+    useContext(ServicesContext);
+
   const newDetail = (detail, idx) => <p key={idx}>{detail}</p>;
 
   return (
@@ -19,7 +18,7 @@ const ServiceTitleCard = ({
           className={
             selectedService === service.title ? "activeTitle" : "inactiveTitle"
           }
-          onClick={() => changeSelectedService(service.title)}
+          onClick={() => setSelectedService(service.title)}
         >
           {service.title}
         </h2>
@@ -30,7 +29,7 @@ const ServiceTitleCard = ({
               : "inactiveToggle"
           }`}
           size="24px"
-          onClick={() => changeSelectedService(service.title)}
+          onClick={() => setSelectedService(service.title)}
         />
       </div>
 
@@ -41,10 +40,12 @@ const ServiceTitleCard = ({
             : "hideMobileDetails"
         }`}
       >
-        <div className="mobile-details">{service.details.map(newDetail)}</div>
+        <div className="mobile-details">
+          {selectedServiceItem.details.map(newDetail)}
+        </div>
 
         <div className="pricingContainer__mobile">
-          <p>Pricing starts at {service.price} USD</p>
+          <p>Pricing starts at {selectedServiceItem.price} USD</p>
           <Link to="/contact" className="arrowcontainer-mobile">
             <FaArrowRight className="pricing-arrow__mobile" />
           </Link>

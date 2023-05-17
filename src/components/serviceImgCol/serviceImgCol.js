@@ -1,18 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ServicesContext } from "../../context/servicesContext";
 import "./serviceImgCol.css";
 import stamp from "../../images/stamp_p.svg";
 import beach from "../../images/vintage-beach-short.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-// Need to position stamp once sizing is finalized for columns.
-//Want to create a page container before doing this so that all pages are aligned correctly
-
-const ServiceImgCol = ({ selectedService, serviceData }) => {
-  const selectedServiceItem = serviceData.find(
-    ({ title }) => title === selectedService
-  );
-
+const ServiceImgCol = () => {
+  const { selectedServiceItem } = useContext(ServicesContext);
   return (
     <div className="servicespg__col3">
       <img src={beach} alt="beach" className="pricingpg__beachImg" />

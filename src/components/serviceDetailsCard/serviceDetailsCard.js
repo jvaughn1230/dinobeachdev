@@ -1,19 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ServicesContext } from "../../context/servicesContext";
+
 import "./serviceDetailsCard.css";
-import { serviceData } from "../../constants/serviceData";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const ServiceDetailsCard = ({ selectedService }) => {
-  const selectedServiceItem = serviceData.find(
-    ({ title }) => title === selectedService
-  );
+const ServiceDetailsCard = () => {
+  const { selectedServiceItem } = useContext(ServicesContext);
+  console.log(selectedServiceItem.price);
 
   const newServiceDetail = (serviceDetail, idx) => (
     <p key={idx}>{serviceDetail}</p>
   );
-
-  console.log(selectedServiceItem);
 
   return (
     <div className="serviceDetails__container">

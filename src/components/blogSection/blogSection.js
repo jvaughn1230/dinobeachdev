@@ -1,21 +1,13 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useContext } from "react";
 import waves from "../../images/waves.svg";
 import "./blogSection.css";
 import BlogCard from "../blogCard/blogCard";
+import { BlogContext } from "../../context/blogContext";
 
 const BlogSection = () => {
-  const [posts, setPosts] = useState([]);
-  useEffect(() => {
-    axios
-      .get(
-        "http://localhost:1337/api/posts?sort=publishedAt:desc&pagination[limit]=3&populate=*"
-      )
-      .then(({ data }) => setPosts(data.data))
-      .catch((error) => console.log(error));
-  }, []);
+  const { homePosts } = useContext(BlogContext);
 
-  const blogPosts = posts.map((post) => (
+  const blogPosts = homePosts.map((post) => (
     <div className="homeblogcard">
       <BlogCard
         title={post.attributes.title}
