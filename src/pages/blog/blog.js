@@ -1,29 +1,14 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useContext } from "react";
+
+import { BlogContext } from "../../context/blogContext";
 
 import FeaturedBlogCard from "../../components/featuredBlogCard/featuredBlogCard";
 import BlogCard from "../../components/blogCard/blogCard";
 
 import "./blog.css";
 
-// image.data.attributes.name = jpeg file
-
 const Blog = () => {
-  const [posts, setPosts] = useState([]);
-  useEffect(() => {
-    axios
-      .get(
-        "http://localhost:1337/api/posts?sort=publishedAt:desc&pagination[limit]=8&populate=*"
-      )
-      .then(({ data }) => setPosts(data.data))
-      .catch((error) => console.log(error));
-  }, []);
-
-  // Slicing Blog Posts
-  const featuredPosts = posts.slice(0, 2);
-  const olderPosts = posts.slice(2);
-
-  console.log(featuredPosts);
+  const { featuredPosts, agedPosts } = useContext(BlogContext);
 
   // Mapping Blog Posts
   const featuredBlogPosts = featuredPosts.map((post) => (
@@ -37,7 +22,7 @@ const Blog = () => {
     />
   ));
 
-  const regularCards = olderPosts.map((post) => (
+  const regularCards = agedPosts.map((post) => (
     <BlogCard
       title={post.attributes.title}
       description={post.attributes.description}

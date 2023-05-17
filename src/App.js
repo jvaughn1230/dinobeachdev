@@ -1,3 +1,8 @@
+import React from "react";
+
+import { BlogContextProvider } from "./context/blogContext";
+import { ServicesContextProvider } from "./context/servicesContext";
+
 import "./App.css";
 
 import { Route, Routes } from "react-router-dom";
@@ -12,16 +17,20 @@ import Post from "./pages/post/post";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<Post />} />
-      </Route>
-    </Routes>
+    <BlogContextProvider>
+      <ServicesContextProvider>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<Post />} />
+          </Route>
+        </Routes>
+      </ServicesContextProvider>
+    </BlogContextProvider>
   );
 }
 
