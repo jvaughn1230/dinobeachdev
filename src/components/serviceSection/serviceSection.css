@@ -5,10 +5,10 @@
 
 .services-text {
   color: var(--blue);
+  font-family: var(--header-text);
   font-size: clamp(1rem, 1.3021vw, 1.5rem);
   line-height: 1;
   padding-top: 0.75rem;
-  font-family: var(--header-text);
 }
 
 .servicessection__headerContainer {
@@ -16,8 +16,8 @@
 }
 
 .servicessection__header {
-  font-family: var(--content-text);
   color: var(--dark);
+  font-family: var(--content-text);
 }
 
 .servicecards-container {
@@ -28,15 +28,15 @@
 }
 
 .services-side-text {
+  border-radius: 50%;
+  color: var(--cream);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  color: var(--cream);
   font-size: 1.5rem;
   height: 250px;
-  width: 250px;
-  border-radius: 50%;
+  justify-content: center;
   text-align: center;
+  width: 250px;
 }
 
 .services-side-text h3 {

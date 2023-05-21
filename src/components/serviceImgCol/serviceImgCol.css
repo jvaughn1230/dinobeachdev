@@ -1,15 +1,15 @@
 .pricingpg__beachImg {
-  width: 25vw;
-  border-top-right-radius: 45%;
   border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  width: 25vw;
 }
 
 .pricingpg__stamp {
+  left: 65%;
   position: absolute;
+  top: 40%;
   width: 12.4349vw;
   z-index: var(--layer2);
-  top: 40%;
-  left: 65%;
 }
 
 .servicespg__col3 {
@@ -28,19 +28,19 @@
 
 .servicespg__col3 h5 {
   color: var(--pink);
-  font-size: clamp(1rem, 2.3438vw, 36px);
   font-family: var(--title-text);
+  font-size: clamp(1rem, 2.3438vw, 36px);
   margin: 0.5em 0 0 0;
 }
 
 .pricing-arrow {
-  border-radius: 9999px;
-  height: 5rem;
-  width: 5.2083vw;
-  background-color: #ffde9d;
-  color: var(--dark);
-  padding: 0.5rem;
   align-self: flex-end;
+  background-color: #ffde9d;
+  border-radius: 9999px;
+  color: var(--dark);
+  height: 5rem;
+  padding: 0.5rem;
+  width: 5.2083vw;
 }
 
 .pricing-arrow:hover {
@@ -49,8 +49,8 @@
 
 .pricing-row2 {
   display: flex;
-  margin-left: 50%;
   margin-bottom: 2em;
+  margin-left: 50%;
 }
 
 @media (max-width: 800px) {

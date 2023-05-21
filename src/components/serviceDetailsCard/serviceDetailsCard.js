@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 const ServiceDetailsCard = () => {
   const { selectedServiceItem } = useContext(ServicesContext);
-  console.log(selectedServiceItem.price);
 
   const newServiceDetail = (serviceDetail, idx) => (
     <p key={idx}>{serviceDetail}</p>

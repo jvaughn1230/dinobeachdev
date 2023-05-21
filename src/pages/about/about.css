@@ -4,10 +4,10 @@
 
 .aboutpagerow1,
 .aboutpagerow2 {
-  position: relative;
   display: flex;
-  justify-content: space-between;
   font-size: var(--lg-text);
+  justify-content: space-between;
+  position: relative;
 }
 
 .aboutpagerow2 {
@@ -15,14 +15,15 @@
 }
 
 .aboutpage-header {
-  max-width: 50%;
   font-family: var(--header-text);
+  max-width: 50%;
 }
+
 .aboutpage-summary {
-  max-width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 60%;
 }
 
 .aboutpage-summary h3 {
@@ -31,31 +32,31 @@
 
 .aboutpage-summary p {
   color: var(--dark);
+  font-family: var(--content-text);
   font-size: var(--md-text);
   line-height: 1.5;
-  font-family: var(--content-text);
 }
 
 .aboutprint {
-  position: absolute;
   height: 4rem;
+  position: absolute;
   width: 4.1667vw;
 }
 
 .aboutpage-posts {
-  display: flex;
   background-color: #fadcd2;
+  display: flex;
   justify-content: space-around;
   margin-inline: -7.765vw;
-  position: relative;
   padding-block: 3rem;
+  position: relative;
 }
 
 .aboutpage-posts img {
   height: 6rem;
+  left: 3.2552vw;
   position: absolute;
   rotate: -45deg;
-  left: 3.2552vw;
   z-index: var(--layer2);
 }
 
@@ -71,25 +72,25 @@
 }
 
 .aboutpage-bottomrow h2 {
-  margin-right: 5em;
-  font-size: var(--lg-text);
   font-family: var(--header-text);
+  font-size: var(--lg-text);
+  margin-right: 5em;
 }
 
 .contact-button {
+  align-items: center;
+  align-self: center;
   background-color: var(--yellow);
   border-radius: 30px;
-  height: 5em;
-  width: 10em;
+  color: var(--dark);
+  display: flex;
+  font-family: var(--content-text);
   font-size: var(--sm-text);
   font-weight: 800;
-  color: var(--dark);
-  align-self: center;
-  font-family: var(--content-text);
-  display: flex;
-  align-items: center;
+  height: 5em;
   justify-content: center;
   text-decoration: none;
+  width: 10em;
 }
 
 .contact-button:hover {
@@ -98,52 +99,55 @@
 
 /* Foot Prints Positioning */
 .aboutprint1 {
-  top: 20px;
   rotate: 95deg;
+  top: 20px;
 }
 
 .aboutprint2 {
-  top: 90px;
   left: 3.2552vw;
   rotate: 115deg;
+  top: 90px;
 }
 
 .aboutprint3 {
   left: 9.4401vw;
-  top: 30px;
   rotate: 120deg;
+  top: 30px;
 }
 
 .aboutprint4 {
   left: 13.0208vw;
-  top: 100px;
   rotate: 105deg;
+  top: 100px;
 }
 
 .aboutprint5 {
   left: 22.7865vw;
-  top: 50px;
   rotate: 90deg;
+  top: 50px;
 }
 
 .aboutprint6 {
   left: 65.1042vw;
   rotate: -90deg;
 }
+
 .aboutprint7 {
   left: 71.6146vw;
-  top: -45px;
   rotate: 250deg;
+  top: -45px;
 }
+
 .aboutprint8 {
   left: 78.125vw;
-  top: -60px;
   rotate: 240deg;
+  top: -60px;
 }
+
 .aboutprint9 {
   left: 81.3802vw;
-  top: -150px;
   rotate: 225deg;
+  top: -150px;
 }
 
 /* Media Queries */
@@ -160,8 +164,8 @@
 @media (max-width: 1100px) {
   .aboutpagerow1,
   .aboutpagerow2 {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 
   .aboutpage-header {
@@ -178,8 +182,8 @@
   }
 
   .aboutpage-posts {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 
   .aboutblogcard:nth-child(3) {
@@ -187,8 +191,8 @@
   }
 
   .aboutpage-bottomrow {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 
   .aboutpage-bottomrow h2 {
@@ -200,7 +204,7 @@
   }
 
   .aboutpage-posts img {
-    top: 50px;
     left: 15vw;
+    top: 50px;
   }
 }

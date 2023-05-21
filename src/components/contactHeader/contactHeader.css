@@ -12,32 +12,32 @@
 .contact__print2,
 .contact__print3,
 .contact__print4 {
-  width: 4vw;
   position: relative;
+  width: 4vw;
 }
 
 .contact__print1 {
-  rotate: 125deg;
-  left: 7vw;
   bottom: 3vw;
+  left: 7vw;
+  rotate: 125deg;
 }
 
 .contact__print2 {
-  rotate: 90deg;
   left: 7vw;
+  rotate: 90deg;
   top: 2vw;
 }
 
 .contact__print3 {
-  rotate: 70deg;
-  left: 10vw;
   bottom: 1vw;
+  left: 10vw;
+  rotate: 70deg;
 }
 
 .contact__print4 {
-  rotate: 50deg;
-  left: 12vw;
   bottom: 4.5vw;
+  left: 12vw;
+  rotate: 50deg;
 }
 
 @media (max-width: 900px) {
