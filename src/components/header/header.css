@@ -1,8 +1,8 @@
 .header-container {
-  padding: 1.25rem 0 1.25rem 0;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 1.25rem 0 1.25rem 0;
 }
 
 .desktop-links-container {
@@ -10,10 +10,10 @@
 }
 
 .link-item {
-  text-decoration: none;
-  margin-inline: 1.5rem;
   color: var(--dark);
   font-size: 1.0417vw;
+  margin-inline: 1.5rem;
+  text-decoration: none;
 }
 
 .link-item:hover {
@@ -40,41 +40,41 @@
   }
 
   .openMobileMenu {
-    z-index: var(--top-layer);
-    position: fixed;
-    display: inline-block;
     background-color: var(--yellow);
+    display: inline-block;
     height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
     left: 0;
     overflow: hidden;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: var(--top-layer);
   }
 
   .nav-flex-container {
-    height: 100%;
-    width: 100%;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 100%;
     justify-content: space-around;
+    width: 100%;
   }
 
   .links-container-mobile {
-    height: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 
   .showCloseIcon {
     position: absolute;
-    top: 2rem;
     right: 2rem;
+    top: 2rem;
   }
 
   .link-item {
-    font-size: 3.75rem;
     color: white;
+    font-size: 3.75rem;
   }
 }

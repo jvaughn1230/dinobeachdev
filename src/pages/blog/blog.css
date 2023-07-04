@@ -6,8 +6,8 @@
 
 .agedPosts {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .blogpage {
@@ -16,8 +16,8 @@
 
 @media (max-width: 900px) {
   .newPosts {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     margin-bottom: 0;
   }
 
@@ -29,5 +29,6 @@
     justify-content: center;
   }
 }
+/* TODO: Delet if nothing added */
 @media (max-width: 600px) {
 }

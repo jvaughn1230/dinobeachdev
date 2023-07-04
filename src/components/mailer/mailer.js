@@ -1,9 +1,13 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useContext } from "react";
+import { serviceData } from "../../constants/serviceData";
+import { ServicesContext } from "../../context/servicesContext";
 
 import "./mailer.css";
 import emailjs from "@emailjs/browser";
 
 const Mailer = () => {
+  const { selectedService } = useContext(ServicesContext);
+  const [isHovered, setIsHovered] = useState(false);
   const [values, setValues] = useState({
     firstName: "",
     lastName: "",
@@ -11,6 +15,14 @@ const Mailer = () => {
     company: "",
     message: "",
   });
+
+  console.log(isHovered);
+
+  const newOption = (service, idx) => (
+    <option value={service.title} key={idx}>
+      {service.title}
+    </option>
+  );
 
   const [status, setStatus] = useState("");
 
@@ -60,6 +72,7 @@ const Mailer = () => {
           onChange={handleChange}
           required
         />
+
         <input
           className="inputStyles"
           type="text"
@@ -69,6 +82,7 @@ const Mailer = () => {
           onChange={handleChange}
           required
         />
+
         <input
           className="inputStyles"
           type="email"
@@ -78,6 +92,7 @@ const Mailer = () => {
           onChange={handleChange}
           required
         />
+
         <input
           className="inputStyles"
           type="text"
@@ -91,14 +106,10 @@ const Mailer = () => {
           name="package"
           id="package"
           className={`$"inputStyles" col-span-1 md:col-span-2`}
+          defaultValue={selectedService}
         >
           <optgroup className="inputStyles">
-            <option value="weekend getaway">Weekend Getaway</option>
-            <option value="day at dinobeach">Day at Dino Beach</option>
-            <option value="ddinofluencer">Dinofluencer</option>
-            <option value="dinoland">Dinoland</option>
-            <option value="build a beach">Build a beach</option>
-            <option value="custom">More Custom</option>
+            {serviceData.map(newOption)}
           </optgroup>
         </select>
 
@@ -114,7 +125,13 @@ const Mailer = () => {
         <input
           type="submit"
           value="send"
-          className="contact__submit gradient-text"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          className={` ${
+            isHovered
+              ? "cream-text contact__submit"
+              : "gradient-text contact__submit"
+          }`}
         />
       </form>
     </div>

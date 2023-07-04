@@ -1,52 +1,53 @@
 .hero-container {
-  height: calc(100vh_-_150px);
-  position: relative;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: calc(100vh_-_150px);
+  justify-content: center;
+  position: relative;
 }
 
 .hero-header {
-  font-size: var(--xxl-text);
-  line-height: 1;
-  font-weight: 800;
-  padding-top: 0.75rem;
-  margin: 0;
   font-family: var(--header-text);
+  font-size: var(--xxl-text);
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+  padding-top: 0.75rem;
 }
 
 .hero-subtext {
-  padding: 0.5rem;
-  font-size: 24px;
-  width: 90%;
   color: var(--dark);
   font-family: var(--content-text);
+  font-size: 24px;
+  padding: 0.5rem;
+  width: 90%;
 }
 
 .hero-button {
   background-color: var(--yellow);
-  font-size: clamp(14px, 1.1719vw, 1.125rem);
-  line-height: 1.75rem;
-  padding: 1.25em;
   border-radius: 9999px;
   border-style: none;
-  font-weight: 300;
   color: var(--dark);
   font-family: var(--content-text);
+  font-size: clamp(14px, 1.1719vw, 1.125rem);
+  font-weight: 300;
+  line-height: 1.75rem;
+  padding: 1.25em;
+  text-decoration: none;
 }
 
 .hero-img {
-  min-width: 40vw;
-  height: auto;
   border-top-left-radius: 45%;
   border-top-right-radius: 45%;
+  height: auto;
+  min-width: 40vw;
   transform: scale(0.9);
 }
 
 .hero-stamp {
-  width: 12.4349vw;
-  z-index: var(--layer2);
+  bottom: 10%;
   position: absolute;
   right: 40%;
-  bottom: 10%;
+  width: 12.4349vw;
+  z-index: var(--layer2);
 }

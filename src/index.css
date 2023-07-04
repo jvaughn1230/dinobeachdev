@@ -46,10 +46,7 @@ html {
   box-sizing: border-box;
 }
 
-a {
-  color: inherit;
-}
-
+/* ToDO: Check where using */
 .page-container {
   margin: 0 7.765vw;
   /* max-width: 80rem; */
@@ -78,6 +75,7 @@ a {
 }
 
 @media (max-width: 750px) {
+  /* TODO: delete if still empty at end */
   .page-container {
     /* max-width: 28rem; */
   }

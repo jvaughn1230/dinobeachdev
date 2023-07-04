@@ -6,17 +6,17 @@
 
 .activeTitle {
   color: pink;
-  font-weight: 700;
-  font-size: clamp(1.5rem, 3.125vw, 48px);
   font-family: var(--header-text);
+  font-size: clamp(1.5rem, 3.125vw, 48px);
+  font-weight: 700;
   text-align: left;
 }
 
 .inactiveTitle {
   color: var(--blue);
-  font-weight: 700;
-  font-size: clamp(1rem, 1.3021vw, 1.5rem);
   font-family: var(--header-text);
+  font-size: clamp(1rem, 1.3021vw, 1.5rem);
+  font-weight: 700;
 }
 
 .inactiveTitle:hover {
@@ -49,8 +49,8 @@
   }
 
   .servicespg__titlecard-container {
-    width: 50vw;
     min-height: 410px;
+    width: 50vw;
   }
 }
 
@@ -64,22 +64,22 @@
   }
 
   .activeTitle {
-    margin-top: 0.5em;
     margin-bottom: 0.5em;
+    margin-top: 0.5em;
   }
 
   .pricing-arrow__mobile {
-    height: 75%;
-    width: 75%;
-    border-radius: 9999px;
     background-color: #ffde9d;
-    padding: 0.25rem;
+    border-radius: 9999px;
+    height: 75%;
     margin-left: 2em;
+    padding: 0.25rem;
+    width: 75%;
   }
 
   .arrowcontainer-mobile {
-    display: flex;
     align-items: center;
+    display: flex;
   }
 
   .pricing-arrow__mobile:hover {

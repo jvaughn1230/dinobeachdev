@@ -3,10 +3,10 @@
 }
 
 .serviceDetails__container p {
-  font-family: var(--content-text);
   color: var(--dark);
-  font-weight: 700;
+  font-family: var(--content-text);
   font-size: clamp(1rem, 1.3021vw, 1.5rem);
+  font-weight: 700;
   margin-left: 0.4em;
   max-width: 90%;
 }
@@ -21,19 +21,19 @@
   }
 
   .arrowcontainer__tablet {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
   }
 
   .pricingArrow__tablet {
-    border-radius: 9999px;
-    height: 7vw;
-    width: 7vw;
     background-color: #ffde9d;
+    border-radius: 9999px;
     color: var(--dark);
-    padding: 0.5rem;
+    height: 7vw;
     margin-left: 3rem;
+    padding: 0.5rem;
+    width: 7vw;
   }
 
   .pricingArrow__tablet:hover {
