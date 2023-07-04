@@ -46,10 +46,6 @@ html {
   box-sizing: border-box;
 }
 
-a {
-  color: inherit;
-}
-
 /* ToDO: Check where using */
 .page-container {
   margin: 0 7.765vw;

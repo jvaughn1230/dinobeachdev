@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./heroSection.css";
 
 import beachBackground from "../../images/vintage-beach-short.jpg";
@@ -17,7 +18,9 @@ const HeroSection = () => {
           </p>
         </div>
 
-        <button className="hero-button">find out how</button>
+        <Link to="/services" className="hero-button">
+          find out how
+        </Link>
       </div>
 
       {/* Images */}

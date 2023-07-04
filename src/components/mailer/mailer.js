@@ -19,11 +19,7 @@ const Mailer = () => {
   console.log(isHovered);
 
   const newOption = (service, idx) => (
-    <option
-      value={service.title}
-      key={idx}
-      selected={service.title === selectedService ? true : false}
-    >
+    <option value={service.title} key={idx}>
       {service.title}
     </option>
   );
@@ -110,6 +106,7 @@ const Mailer = () => {
           name="package"
           id="package"
           className={`$"inputStyles" col-span-1 md:col-span-2`}
+          defaultValue={selectedService}
         >
           <optgroup className="inputStyles">
             {serviceData.map(newOption)}
