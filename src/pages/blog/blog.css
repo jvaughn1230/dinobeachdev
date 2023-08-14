@@ -5,12 +5,27 @@
 }
 
 .agedPosts {
+  /* display: inline-flex;
+  flex-wrap: wrap;
+  gap: calc((100% - (30%*3))/3) ; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+
+  flex: 0 0 30%;
+  column-gap: calc((100% - (29%*3))/3)
+}
+
+.agedPosts > div:nth-child(3n) { 
+}
+
+.agedPosts > div { 
+  width: 30%;
 }
 
 .blogpage {
+  display:flex;
+  flex-direction: column;
   margin-bottom: 3rem;
 }
 
@@ -26,9 +41,18 @@
   }
 
   .agedPosts {
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    column-gap: 0;
   }
+
+  .agedPosts > div { 
+    width:auto;
+  }
+  
 }
 /* TODO: Delet if nothing added */
 @media (max-width: 600px) {
+
 }

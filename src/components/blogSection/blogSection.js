@@ -8,7 +8,7 @@ const BlogSection = () => {
   const { homePosts } = useContext(BlogContext);
 
   const blogPosts = homePosts.map((post) => (
-    <div className="homeblogcard">
+    <div key={post.id} className="homeblogcard">
       <BlogCard
         title={post.attributes.title}
         description={post.attributes.description}

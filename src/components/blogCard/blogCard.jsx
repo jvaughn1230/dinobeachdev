@@ -6,6 +6,8 @@ import "./blogCard.css";
 const BlogCard = (post) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
+    <div>
+
     <Link to={`/blog/${post.id}`} state={{ post }}>
       <div className="blogcard gradient-bg">
         <div
@@ -36,6 +38,8 @@ const BlogCard = (post) => {
         </div>
       </div>
     </Link>
+    </div>
+
   );
 };
 export default BlogCard;

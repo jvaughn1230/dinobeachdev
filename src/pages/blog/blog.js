@@ -9,7 +9,7 @@ import "./blog.css";
 
 const Blog = () => {
   const { featuredPosts, agedPosts } = useContext(BlogContext);
-
+  console.log("featured, old : ", featuredPosts, agedPosts)
   // Mapping Blog Posts
   const featuredBlogPosts = featuredPosts.map((post) => (
     <FeaturedBlogCard
@@ -19,6 +19,8 @@ const Blog = () => {
       id={post.id}
       key={post.id}
       img={post.attributes.image?.data?.attributes?.url}
+      publishedAt={new Date(post.attributes.publishedAt).toLocaleDateString('en-US')}
+      createdAt={post.attributes.createdAt}
     />
   ));
 
@@ -30,6 +32,8 @@ const Blog = () => {
       id={post.id}
       key={post.id}
       img={post.attributes.image?.data?.attributes?.url}
+      publishedAt={new Date(post.attributes.publishedAt).toDateString()}
+      createdAt={post.attributes.createdAt}
     />
   ));
 
