@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Aclonica&family=Space+Mono&display=swap");
 
 :root {
   /* Main Colors */
   --cream: #faf6ee;
-  --pink: #e2abb3;
+  --pink: #eda9b2;
   --blue: #3c97be;
-  --dark: #5d6567;
+  --dark: #13293D;
+  /* --dark: #0F0A0A; */
+  /* --dark: #5d6567; */
+  
   --yellow: #ffde9d;
 
   /* Fonts */
@@ -31,12 +34,13 @@ body {
   padding: 0;
   border-top-style: solid;
   border-top-width: 15px;
-  border-image: linear-gradient(to right, #eda9b2, #23b4d9) 1;
+  border-image: linear-gradient(to right,var(--pink), var(--blue)) 1;
   background: #faf6ee;
   overflow-x: hidden;
   /* height: 100vh; */
   width: 100vw;
   font-family: var(--content-text);
+  color: var(--dark);
 }
 
 html {
@@ -54,13 +58,13 @@ html {
 }
 
 .gradient-text {
-  background: -webkit-linear-gradient(#eda9b2, #23b4d9);
+  background: -webkit-linear-gradient(var(--pink), var(--blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-bg {
-  background: -webkit-linear-gradient(#eda9b2, #23b4d9);
+  background: -webkit-linear-gradient(var(--pink), var(--blue));
 }
 
 .hide {
@@ -80,4 +84,29 @@ html {
   .page-container {
     /* max-width: 28rem; */
   }
+}
+
+/* $color-code-background: #272822;
+$color-code-color: #f8f8f2; */
+/* pre code {
+  white-space: pre;
+} */
+
+pre { 
+  background-color: var(--dark);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  display: inline-block;
+  width: 100%;
+  border-width: 1rem; 
+  border-color: var(--pink);
+  font-family: 'Space Mono', monospace;
+  white-space: pre-wrap;
+}
+
+code {
+  color: #fff;
+  line-height: 1.5rem;
+  font-family: 'Space Mono', monospace;
+  /* white-space: nowrap; */
 }

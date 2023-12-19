@@ -1,5 +1,5 @@
 .blogcard {
-  height: 23vw;
+  height: 23vw; 
   /* width: 23vw; */
   border-radius: 0.75rem;
   margin-top: 1.5em;
@@ -24,7 +24,7 @@
   flex-direction: column;
   position: relative;
 }
-
+ 
 .blogcard-layer3 {
   height: 95%;
   width: 95%;
@@ -38,11 +38,13 @@
   opacity: 0.3;
 }
 
+
 .background:hover {
   background: transparent;
   color: var(cream);
 }
 
+/* this is the problem section for the front  */
 .blogcard-content {
   display: flex;
   flex-direction: column;
@@ -51,7 +53,8 @@
   padding-inline: 1.5em;
   top: 2vh;
   height: 95%;
-  width: 95%;
+  width: 95%; 
+  
 }
 
 .blogcard__title {
@@ -99,4 +102,4 @@
   .blogcard-content h3 {
     font-size: 30px;
   }
-}
+} 

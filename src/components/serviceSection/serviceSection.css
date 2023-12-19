@@ -6,7 +6,7 @@
 .services-text {
   color: var(--blue);
   font-family: var(--header-text);
-  font-size: clamp(1rem, 1.3021vw, 1.5rem);
+  font-size: clamp(2rem, 1.643rem + 0.952vw, 2.5rem);
   line-height: 1;
   padding-top: 0.75rem;
 }
@@ -56,5 +56,9 @@
 @media (max-width: 1100px) {
   .services-link {
     order: 5;
+  }
+
+  .service-card-container{
+    /* flex: 1;  */
   }
 }

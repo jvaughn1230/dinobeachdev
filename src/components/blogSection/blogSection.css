@@ -3,11 +3,11 @@
   position: relative;
 }
 
-.blogsection h2 {
+/* .blogsection h2 {
   color: var(--blue);
   font-family: var(--header);
   font-size: var(--lg-text);
-}
+} */
 
 .blogsection img {
   height: 6rem;
@@ -21,11 +21,20 @@
 .blogsection__posts {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
 }
 
 .homeblogcard:nth-child(2) {
   margin-top: 100px;
   position: relative;
+}
+
+.blog-text {
+  color: var(--blue);
+  font-family: var(--header-text);
+  font-size: clamp(1rem, 1.3021vw, 1.5rem);
+  line-height: 1;
+  padding-top: 0.75rem;
 }
 
 @media (max-width: 900px) {

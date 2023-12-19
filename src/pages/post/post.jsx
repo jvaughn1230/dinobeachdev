@@ -6,28 +6,28 @@ const Post = () => {
   const location = useLocation();
   const post = location.state;
 
+  // console.log("post: ", post.post.body)
   return (
     <div className="post__container">
       <div className="post__header_container">
-        <div className="">
-          <h1 className="post__title gradient-text">{post.post.title}</h1>
+        <div className="post__details_container">
           <h4>{post.post.publishedAt}</h4>
+          <h1 className="post__title gradient-text">{post.post.title}</h1>
+          <h3>{post.post.description}</h3>
         </div>
-        
         <img className="post__title_img" alt="post that shows desc"src={`http://localhost:1337${post.post.img}`}/>
       </div>
-      <h3>{post.post.description}</h3>
       <div className="post__body_container">
         <div className="post__chapters">
-          <h2>Chapters
-          </h2>
+          {/* <h2>Sections</h2>
           <ul>
             <li>Ch 1</li>
             <li>Ch 2</li>
             <li>Ch 2</li>
-          </ul>
+          </ul> */}
         </div>
         <ReactMarkdown className="post__body">{post.post.body}</ReactMarkdown>
+        <div></div>
       </div>
     </div>
   );

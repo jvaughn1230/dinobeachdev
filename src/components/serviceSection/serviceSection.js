@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import ServiceCard from "../serviceCard/serviceCard";
 import { serviceData } from "../../constants/serviceData";
-
 import "./serviceSection.css";
 
 const ServiceSection = () => {
@@ -23,11 +21,11 @@ const ServiceSection = () => {
 
   return (
     <div className="servicesection-container">
-      <h3 className="servicessection__header">services</h3>
-      <h2 className="services-text ">
+      <h2 className="services-text">Services</h2>
+      <h3 className="servicessection__header-text">
         we like to create <span className="gradient-text">pretty</span> websites
         that work <span className="gradient-text">fast</span>
-      </h2>
+      </h3>
       <div className="servicecards-container">
         {firstRowData.map(newServiceCard)}
 

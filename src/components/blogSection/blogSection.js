@@ -20,8 +20,8 @@ const BlogSection = () => {
 
   return (
     <div className="blogsection">
-      <h2>Blog</h2>
-      <img src={waves} alt="waves" />
+      <h2 className="services-text">Blog</h2>
+      <img src={waves} alt="waves"/>
       <div className="blogsection__posts">{blogPosts}</div>
     </div>
   );

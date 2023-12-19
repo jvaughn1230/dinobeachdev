@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
-
 import { BlogContext } from "../../context/blogContext";
-
 import FeaturedBlogCard from "../../components/featuredBlogCard/featuredBlogCard";
 import BlogCard from "../../components/blogCard/blogCard";
 
@@ -9,7 +7,7 @@ import "./blog.css";
 
 const Blog = () => {
   const { featuredPosts, agedPosts } = useContext(BlogContext);
-  console.log("featured, old : ", featuredPosts, agedPosts)
+  // console.log("featured, old : ", featuredPosts, agedPosts)
   // Mapping Blog Posts
   const featuredBlogPosts = featuredPosts.map((post) => (
     <FeaturedBlogCard

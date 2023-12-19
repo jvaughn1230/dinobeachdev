@@ -1,10 +1,10 @@
 .layout__container {
   background-color: #faf6ee;
   background-image: url("../images/img-noise.png");
-  border-image: linear-gradient(to right, #eda9b2, #23b4d9) 1;
+  border-image: linear-gradient(to right, var(--pink), var(--blue)) 1;
   border-top-style: solid;
   border-top-width: 15;
-  color: #5d6567;
+  color: var(--dark);
   padding: 0;
 }
 

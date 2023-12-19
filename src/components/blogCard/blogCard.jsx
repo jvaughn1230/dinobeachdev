@@ -7,7 +7,6 @@ const BlogCard = (post) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div>
-
     <Link to={`/blog/${post.id}`} state={{ post }}>
       <div className="blogcard gradient-bg">
         <div
