@@ -46,7 +46,7 @@
 
 /* this is the problem section for the front  */
 .blogcard-content {
-  display: flex;
+  display: flex; 
   flex-direction: column;
   z-index: var(--layer2);
   position: absolute;
@@ -54,7 +54,6 @@
   top: 2vh;
   height: 95%;
   width: 95%; 
-  
 }
 
 .blogcard__title {

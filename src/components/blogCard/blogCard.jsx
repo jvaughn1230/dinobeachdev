@@ -28,7 +28,6 @@ const BlogCard = (post) => {
             <h3 className={isHovered ? "blogcard__title" : "gradient-text"}>
               {post.title}
             </h3>
-
             <FaArrowRight
               className={isHovered ? "show blogcard__arrow" : "hide"}
               size={60}

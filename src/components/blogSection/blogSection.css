@@ -19,11 +19,21 @@
 }
 
 .blogsection__posts {
+  /* display: grid; 
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;  */
   display: flex;
   justify-content: space-around;
   flex-direction: row;
 }
 
+/* .blogsection__posts div { 
+  width: 20%; 
+} */
+
+.homeblogcard{
+  width: 30%;
+}
 .homeblogcard:nth-child(2) {
   margin-top: 100px;
   position: relative;
@@ -39,6 +49,8 @@
 
 @media (max-width: 900px) {
   .blogsection__posts {
+  /* grid-template-columns: 1fr; */
+    
     align-items: center;
     flex-direction: column;
   }
