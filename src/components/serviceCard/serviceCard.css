@@ -1,7 +1,7 @@
 .service-card-container {
   background-color: #fadcd2;
   border-radius: 0.75rem;
-  height: 42.8954vh;
+  /* height: 42.8954vh; */
   margin: 2rem 2rem 2.5rem;
   padding: 2rem 3.5rem;
   position: relative;
@@ -9,7 +9,7 @@
 }
 
 .service-bubble {
-  align-items: start;
+  align-items: flex-start;
   border-radius: 9999px;
   display: flex;
   height: 6rem;

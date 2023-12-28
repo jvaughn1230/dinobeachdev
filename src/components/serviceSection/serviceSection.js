@@ -1,7 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import ServiceCard from "../serviceCard/serviceCard";
-import { serviceData } from "../../constants/serviceData";
+import {serviceData} from "../../constants/serviceData";
 import "./serviceSection.css";
 
 const ServiceSection = () => {
@@ -13,6 +12,7 @@ const ServiceSection = () => {
       <ServiceCard
         key={service.id}
         title={service.title}
+        longTitle={service.longTitle}
         description={service.description}
         details={service.details}
       />

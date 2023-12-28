@@ -2,16 +2,6 @@
   "name": "dinobeachdev2",
   "version": "0.1.0",
   "private": true,
-  "babel": {
-    "plugins": [
-      ["prismjs", {
-          "languages": ["javascript", "css", "markup"],
-          "plugins": ["line-numbers"],
-          "theme": "twilight",
-          "css": true
-      }]
-    ]
-  },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -49,10 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "babel-plugin-prismjs": "^2.1.0"
   }
 }
-
-
