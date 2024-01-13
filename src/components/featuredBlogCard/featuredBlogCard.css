@@ -78,19 +78,21 @@
 
 @media (max-width: 900px) {
   .featuredBlogCard {
-    height: 500px;
-    width: 500px;
+    height: 350px;
+    /* width: 500px; */
   }
 
   .featuredBlog__content h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 600px) {
   .featuredBlogCard {
-    height: 50vw;
-    width: 50vw;
+    /* height: 50vw;
+    width: 50vw; */
+       width: 100%;
+    height: 200px; 
   }
 
   .featuredBlog__content p {

@@ -93,12 +93,14 @@
 
 @media (max-width: 600px) {
   .blogcard {
-    flex-basis: 80%;
+    width: 100%;
+    height: 200px; 
+    /* flex-basis: 80%;
     height: 50vw;
-    width: 50vw;
+    width: 50vw; */
   }
 
   .blogcard-content h3 {
-    font-size: 30px;
+    font-size: 26px;
   }
 } 

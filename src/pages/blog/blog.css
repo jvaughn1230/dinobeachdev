@@ -31,9 +31,11 @@
 
 @media (max-width: 900px) {
   .newPosts {
-    align-items: center;
-    flex-direction: column;
+    /* align-items: center;
+    flex-direction: column; */
+    display: flex;
     margin-bottom: 0;
+    /* flex-direction: column; */
   }
 
   .featuredBlogCard {
@@ -43,7 +45,7 @@
   .agedPosts {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     column-gap: 0;
   }
 
@@ -54,5 +56,7 @@
 }
 /* TODO: Delet if nothing added */
 @media (max-width: 600px) {
-
+  .newPosts {
+    display: block;
+  }
 }

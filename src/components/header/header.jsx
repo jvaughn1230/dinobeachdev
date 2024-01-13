@@ -17,7 +17,7 @@ const Header = () => {
           src={logo}
           alt="DinoBeach Log"
           className="header-logo"
-          width="180"
+        
         />
       </Link>
 

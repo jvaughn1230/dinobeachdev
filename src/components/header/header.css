@@ -27,12 +27,18 @@
   display: none;
 }
 
+.header-logo { 
+  width: 100%; 
+  height: auto;
+  max-width: 180px; /* optional */
+}
+
 /* Mobile CSS */
 
 @media (max-width: 900px) {
   .waves-menu {
     display: inline-block;
-    width: 4rem;
+    width: 3rem;
   }
 
   .desktop-links-container {
@@ -76,5 +82,11 @@
   .link-item {
     color: white;
     font-size: 3.75rem;
+  }
+
+  .header-logo { 
+    width: 100%; 
+    height: auto;
+    max-width: 120px; /* optional */
   }
 }

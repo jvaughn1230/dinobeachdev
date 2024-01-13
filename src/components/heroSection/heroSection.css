@@ -19,7 +19,7 @@
   color: var(--dark);
   font-family: var(--content-text);
   font-size: 24px;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   width: 90%;
 }
 

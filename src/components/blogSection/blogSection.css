@@ -34,6 +34,7 @@
 .homeblogcard{
   width: 30%;
 }
+
 .homeblogcard:nth-child(2) {
   margin-top: 100px;
   position: relative;
@@ -48,10 +49,11 @@
 }
 
 @media (max-width: 900px) {
+
+
   .blogsection__posts {
-  /* grid-template-columns: 1fr; */
-    
-    align-items: center;
+    /* grid-template-columns: 1fr; */
+    /* align-items: center; */
     flex-direction: column;
   }
 
@@ -60,15 +62,23 @@
   }
 
   .blogsection div:nth-child(2) {
-    margin-top: 1.5em;
+    margin-top: 0;
   }
 
   .blogsection img {
     display: none;
   }
+
+  .homeblogcard{
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
+  .blogsection { 
+    margin-bottom: 2rem;
+  }
+
   .blogsection img {
     display: none;
   }
