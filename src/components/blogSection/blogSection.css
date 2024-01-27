@@ -10,7 +10,9 @@
 } */
 
 .blogsection img {
-  height: 6rem;
+  max-width: 8rem;
+  height: auto;
+  /* height: 6rem; */
   left: 25.5208vw;
   position: absolute;
   top: 9rem;
@@ -70,7 +72,9 @@
   }
   
   .blogsection img {
-    display: none;
+    /* display: none; */
+    max-width: 5rem;
+    height: auto;
   }
 
   .homeblogcard .blogcard {
