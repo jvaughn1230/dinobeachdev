@@ -11,7 +11,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-
   flex: 0 0 30%;
   column-gap: calc((100% - (29%*3))/3)
 }
@@ -43,14 +42,14 @@
   }
 
   .agedPosts {
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column; */
+    justify-content: space-between;
     /* align-items: center; */
     column-gap: 0;
   }
 
   .agedPosts > div { 
-    width:auto;
+    width: 40.1042vw;
   }
   
 }
@@ -58,5 +57,16 @@
 @media (max-width: 600px) {
   .newPosts {
     display: block;
+  }
+}
+
+
+@media (max-width: 500px) { 
+  .agedPosts { 
+    flex-direction: column;
+  }
+
+  .agedPosts > div { 
+    width: 100%;
   }
 }

@@ -62,6 +62,7 @@
 
 .blogcard-content h3 {
   font-size: clamp(20px, 2.3438vw, 37px);
+  /* font-size: clamp(1.5rem, 3.125vw, 48px); */
   font-family: var(--header-text);
 }
 
@@ -77,8 +78,8 @@
 
 @media (max-width: 900px) {
   .blogcard {
-    height: 500px;
-    width: 500px;
+    height: 350px;
+    /* width: 500px; */
     flex-basis: 30%;
   }
 
@@ -87,7 +88,7 @@
   }
 
   .blogcard-content h3 {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 }
 
@@ -101,6 +102,6 @@
   }
 
   .blogcard-content h3 {
-    font-size: 26px;
+    /* font-size: 26px; */
   }
 } 
