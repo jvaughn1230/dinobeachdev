@@ -45,11 +45,15 @@
 
 .aboutpage-posts {
   background-color: #fadcd2;
-  display: flex;
-  justify-content: space-around;
+  /* display: flex; */
+  /* justify-content: space-around; */
   margin-inline: -7.765vw;
   padding-block: 3rem;
   position: relative;
+}
+
+.aboutpage-posts-container{ 
+  margin-inline: 7.765vw;
 }
 
 .aboutpage-posts img {
