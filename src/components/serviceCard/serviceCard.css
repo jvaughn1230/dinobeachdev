@@ -1,5 +1,7 @@
 .service-card-container {
   background-color: #fadcd2;
+  /* background-color: var(--pink); */
+  
   border-radius: 0.75rem;
   /* height: 42.8954vh; */
   margin: 2rem 2rem 2.5rem;

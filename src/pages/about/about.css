@@ -48,7 +48,7 @@
   /* display: flex; */
   /* justify-content: space-around; */
   margin-inline: -7.765vw;
-  padding-block: 3rem;
+  padding: 3rem 0;
   position: relative;
 }
 
@@ -62,6 +62,10 @@
   position: absolute;
   rotate: -45deg;
   z-index: var(--layer2);
+}
+
+.aboutpage-posts-container .blogsection{ 
+  margin-bottom: 0;
 }
 
 .aboutblogcard:nth-child(3) {
@@ -152,6 +156,16 @@
   left: 81.3802vw;
   rotate: 225deg;
   top: -150px;
+}
+
+/* images */
+.about-right-img { 
+  max-width: 100%;
+}
+
+.about-left-img { 
+  max-width: 100%;
+  
 }
 
 /* Media Queries */

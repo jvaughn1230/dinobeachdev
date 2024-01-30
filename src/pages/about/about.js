@@ -51,7 +51,7 @@ const About = () => {
     <div className="aboutpage">
       {/* Row1 */}
       <div className="aboutpagerow1">
-        <img src={rightImg} alt="ocean background" />
+        <img src={rightImg} alt="ocean background" className="about-right-img"/>
         <h1 className="aboutpage-header gradient-text">
           Meet your dev dream team, Maira & Alex
         </h1>
@@ -114,7 +114,7 @@ const About = () => {
           alt="dino footprint"
           className="aboutprint aboutprint9"
         />
-        <img src={leftImg} alt="ocean background" />
+        <img src={leftImg} alt="ocean background" className="about-left-img" />
       </div>
 
       {/* Blog Post Sectino */}
