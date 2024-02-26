@@ -20,7 +20,7 @@ const FeaturedBlogCard = (post) => {
             <div
               className={`${isHovered ? "transparent" : "featuredblogcard-bg"}`}
               style={{
-                backgroundImage: `url('http://localhost:1337${post.img}')`,
+                backgroundImage: `url(${post.image})`,
               }}
             ></div>
           </div>

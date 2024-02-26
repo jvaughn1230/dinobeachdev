@@ -56,7 +56,7 @@
 
 .featuredBlog__content h2 {
   font-family: var(--header-text);
-  font-size: clamp(1.5rem, 3.125vw, 48px);
+  font-size: clamp(1.25rem, 2.0833vw, 36px);
   font-weight: 700;
   margin-block-end: 0.25rem;
 }
@@ -64,6 +64,7 @@
 .featuredBlog__content p {
   color: var(--dark);
   font-family: var(--content-text);
+  font-size: var(--md-text);
   font-weight: 600;
   max-width: 95%;
 }
@@ -91,8 +92,8 @@
   .featuredBlogCard {
     /* height: 50vw;
     width: 50vw; */
-       width: 100%;
-    height: 200px; 
+    width: 100%;
+    height: 200px;
   }
 
   .featuredBlog__content p {

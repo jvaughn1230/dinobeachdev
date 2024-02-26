@@ -10,10 +10,12 @@ const BlogSection = () => {
   const blogPosts = homePosts.map((post) => (
     <div key={post.id} className="homeblogcard">
       <BlogCard
-        title={post.attributes.title}
-        description={post.attributes.description}
-        img={post.attributes.image?.data?.attributes?.url}
+        title={post.title}
+        description={post.description}
+        image={post.image}
+        id={post.id}
         key={post.id}
+        body={post.body}
       />
     </div>
   ));
@@ -21,7 +23,7 @@ const BlogSection = () => {
   return (
     <div className="blogsection">
       <h2 className="services-text">Blog</h2>
-      <img src={waves} alt="waves"/>
+      <img src={waves} alt="waves" />
       <div className="blogsection__posts">{blogPosts}</div>
     </div>
   );

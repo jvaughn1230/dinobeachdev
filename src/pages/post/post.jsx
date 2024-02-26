@@ -5,6 +5,9 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 const Post = () => {
   const location = useLocation();
   const post = location.state;
+  console.log(post);
+
+  // Need to check for post and adjust
 
   // console.log("post: ", post.post.body)
   return (
@@ -15,7 +18,13 @@ const Post = () => {
           <h1 className="post__title gradient-text">{post.post.title}</h1>
           <h3>{post.post.description}</h3>
         </div>
-        <img className="post__title_img" alt="post that shows desc"src={`http://localhost:1337${post.post.img}`}/>
+        {post.post.image && (
+          <img
+            className="post__title_img"
+            alt="blog post"
+            src={`{post.post.img}`}
+          />
+        )}
       </div>
       <div className="post__body_container">
         <div className="post__chapters">

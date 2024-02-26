@@ -11,27 +11,27 @@ const Blog = () => {
   // Mapping Blog Posts
   const featuredBlogPosts = featuredPosts.map((post) => (
     <FeaturedBlogCard
-      title={post.attributes.title}
-      description={post.attributes.description}
-      body={post.attributes.body}
+      title={post.title}
+      description={post.description}
+      body={post.body}
       id={post.id}
       key={post.id}
-      img={post.attributes.image?.data?.attributes?.url}
-      publishedAt={new Date(post.attributes.publishedAt).toLocaleDateString('en-US')}
-      createdAt={post.attributes.createdAt}
+      image={post.image}
+      publishedAt={post.publishedAt}
+      createdAt={post.createdAt}
     />
   ));
 
   const regularCards = agedPosts.map((post) => (
     <BlogCard
-      title={post.attributes.title}
-      description={post.attributes.description}
-      body={post.attributes.body}
+      title={post.title}
+      description={post.description}
+      body={post.body}
       id={post.id}
       key={post.id}
-      img={post.attributes.image?.data?.attributes?.url}
-      publishedAt={new Date(post.attributes.publishedAt).toDateString()}
-      createdAt={post.attributes.createdAt}
+      image={post.image}
+      publishedAt={post.publishedAt}
+      createdAt={post.createdAt}
     />
   ));
 
