@@ -28,33 +28,16 @@ const Header = () => {
         onClick={() => setToggleMenu(true)}
       />
 
-      {/* Desktop Links Container */}
-      <div className="desktop-links-container">
-        <Link to="/about" className="link-item">
-          About
-        </Link>
-        <Link to="/services" className="link-item">
-          Services
-        </Link>
-        <Link to="/services" className="link-item">
-          Resources
-        </Link>
-        <Link to="/blog" className="link-item">
-          Blog
-        </Link>
-        <Link to="/contact" className="link-item">
-          Contact
-        </Link>
-      </div>
-
       {/* Mobile Links Container */}
-      <div className={`${toggleMenu ? "openMobileMenu" : "closeMobileMenu"}`}>
-      {/* <div className="openMobileMenu" style={{
-        display: toggleMenu ? "inline-block" : "none",
+      {/* <div className={`${toggleMenu ? "openMobileMenu" : "closeMobileMenu"}`}> */}
+      <div className="openMobileMenu" style={{
+        width: toggleMenu ? "100vw" : "0px",
         transition: "all 500ms ease"
 
-      }}> */}
-        <div className="nav-flex-container">
+      }}>
+        <div className="nav-flex-container" style={{
+          display: toggleMenu ? "flex" : "none"
+        }}>
           <AiOutlineCloseCircle
             className={`${toggleMenu ? "showCloseIcon" : "hideCloseIcon"}`}
             size={70}
@@ -92,6 +75,27 @@ const Header = () => {
           </Link>
         </div>
       </div>
+
+      {/* Desktop Links Container */}
+      <div className="desktop-links-container">
+        <Link to="/about" className="link-item">
+          About
+        </Link>
+        <Link to="/services" className="link-item">
+          Services
+        </Link>
+        <Link to="/services" className="link-item">
+          Resources
+        </Link>
+        <Link to="/blog" className="link-item">
+          Blog
+        </Link>
+        <Link to="/contact" className="link-item">
+          Contact
+        </Link>
+      </div>
+
+
     </div>
   );
 };
