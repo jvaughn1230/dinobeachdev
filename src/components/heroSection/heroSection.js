@@ -14,7 +14,7 @@ const HeroSection = () => {
         </h1>
         <div className="hero-subtext">
           <p>
-            we're a web development team specializing in fast, unique websites
+            We're a web development team specializing in fast, unique websites
           </p>
         </div>
 

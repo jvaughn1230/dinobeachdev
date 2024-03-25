@@ -7,15 +7,14 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footerlinks-container">
-        <Link to="/services" className="footer-link">
-          {" "}
-          Services{" "}
+        <Link to="about" className="footer-link">
+          About
+        </Link>
+        <Link to="/resources" className="footer-link">
+          Resources
         </Link>
         <Link to="/blog" className="footer-link">
           Blog
-        </Link>
-        <Link to="about" className="footer-link">
-          About
         </Link>
         <Link to="contact" className="footer-link">
           Contact
@@ -23,8 +22,8 @@ const Footer = () => {
       </div>
 
       <div className="footer-script">
-        <p className="dinobeach-text-line1">dinobeach</p>
-        <p className="dinobeach-text-line2">dev</p>
+        <p className="dinobeach-text-line1">DinoBeach Dev</p>
+        <p className="dinobeach-text-line2">&copy; 2024</p>
       </div>
     </footer>
   );

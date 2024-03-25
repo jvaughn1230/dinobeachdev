@@ -3,7 +3,7 @@
   background-color: var(--pink);
   color: var(--cream);
   display: flex;
-  font-family: var(--title-text);
+  font-family: var(--header-text);
   justify-content: space-between;
   margin-bottom: 0;
   padding: 0 7.765vw;
@@ -14,6 +14,8 @@
   color: var(--cream);
   line-height: 2.5rem;
   text-decoration: none;
+  font-family: var(--header-text);
+  font-size: var(--md-text);
 }
 
 .footerlinks-container {
@@ -31,10 +33,11 @@
 }
 
 .dinobeach-text-line2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 2rem;
   margin-block: 0;
   text-align: center;
+  font-family: var(--content-text);
 }
 
 .footer-script {

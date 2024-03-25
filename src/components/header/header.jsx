@@ -10,7 +10,6 @@ import wavesMenu from "../../images/waves.svg";
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  console.log("togglemenu state: ", toggleMenu)
   return (
     <div className="header-container">
       <Link to="/">
@@ -52,19 +51,13 @@ const Header = () => {
           >
             About
           </Link>
-          <Link
-            to="/contact"
-            className="link-item"
-            onClick={() => setToggleMenu(false)}
-          >
-            Contact
-          </Link>
+
           <Link
             to="/services"
             className="link-item"
             onClick={() => setToggleMenu(false)}
           >
-            Services
+            Resources
           </Link>
           <Link
             to="/blog"
@@ -72,6 +65,13 @@ const Header = () => {
             onClick={() => setToggleMenu(false)}
           >
             Blog
+          </Link>
+          <Link
+            to="/contact"
+            className="link-item"
+            onClick={() => setToggleMenu(false)}
+          >
+            Contact
           </Link>
         </div>
       </div>
@@ -81,9 +81,9 @@ const Header = () => {
         <Link to="/about" className="link-item">
           About
         </Link>
-        <Link to="/services" className="link-item">
+        {/* <Link to="/services" className="link-item">
           Services
-        </Link>
+        </Link> */}
         <Link to="/services" className="link-item">
           Resources
         </Link>

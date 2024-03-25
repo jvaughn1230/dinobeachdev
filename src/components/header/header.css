@@ -7,18 +7,32 @@
 
 .desktop-links-container {
   font-family: var(--header-text);
+  /* font-size; */
 }
 
 .link-item {
   color: var(--dark);
-  font-size: 1.0417vw;
+  /* font-size: 1.0417vw; */
+  font-size: 1.25rem;
   margin-inline: 1.5rem;
   text-decoration: none;
+  position: relative;
 }
 
 .link-item:hover {
   color: var(--blue);
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  transition: all 500ms ease;
 }
+/* .link-item:hover::before {
+  content: '🌴';
+  position: absolute;
+  left: -25px;
+  bottom: 1px;
+  transition: all 500ms ease;
+
+} */
 
 /* .closeMobileMenu, */
 /* .openMobileMenu, */
