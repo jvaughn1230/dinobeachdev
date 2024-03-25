@@ -2,9 +2,12 @@
 
 :root {
   /* Main Colors */
-  --cream: #faf6ee;
+  --cream: #fef6e4;
+  /* --cream: #faf6ee; */
   --pink: #eda9b2;
+  --accent: #f582ae;
   --blue: #3c97be;
+  --lightblue: #9bbdd9;
   --dark: #13293D;
   /* --dark: #0F0A0A; */
   /* --dark: #5d6567; */

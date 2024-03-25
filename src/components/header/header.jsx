@@ -10,6 +10,7 @@ import wavesMenu from "../../images/waves.svg";
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  console.log("togglemenu state: ", toggleMenu)
   return (
     <div className="header-container">
       <Link to="/">
@@ -20,7 +21,6 @@ const Header = () => {
         
         />
       </Link>
-
       <img
         src={wavesMenu}
         alt="waves menu"
@@ -33,19 +33,27 @@ const Header = () => {
         <Link to="/about" className="link-item">
           About
         </Link>
-        <Link to="/contact" className="link-item">
-          Contact
-        </Link>
         <Link to="/services" className="link-item">
           Services
         </Link>
+        <Link to="/services" className="link-item">
+          Resources
+        </Link>
         <Link to="/blog" className="link-item">
           Blog
+        </Link>
+        <Link to="/contact" className="link-item">
+          Contact
         </Link>
       </div>
 
       {/* Mobile Links Container */}
       <div className={`${toggleMenu ? "openMobileMenu" : "closeMobileMenu"}`}>
+      {/* <div className="openMobileMenu" style={{
+        display: toggleMenu ? "inline-block" : "none",
+        transition: "all 500ms ease"
+
+      }}> */}
         <div className="nav-flex-container">
           <AiOutlineCloseCircle
             className={`${toggleMenu ? "showCloseIcon" : "hideCloseIcon"}`}

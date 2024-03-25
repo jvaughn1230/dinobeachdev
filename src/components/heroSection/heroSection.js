@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./heroSection.css";
 
 import beachBackground from "../../images/vintage-beach-short.jpg";
-import stamp from "../../images/stamp_p.svg";
+import stamp from "../../images/stamp-2-var.svg";
 
 const HeroSection = () => {
   return (
@@ -18,9 +18,9 @@ const HeroSection = () => {
           </p>
         </div>
 
-        <Link to="/services" className="hero-button">
+        {/* <Link to="/services" className="hero-button">
           find out how
-        </Link>
+        </Link> */}
       </div>
 
       {/* Images */}

@@ -18,7 +18,6 @@ const Layout = () => {
     <div className="layout__container">
       <div className="page-container">
         <Header />
-
         <Outlet />
       </div>
       <Footer />

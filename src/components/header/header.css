@@ -46,7 +46,7 @@
   }
 
   .openMobileMenu {
-    background-color: var(--yellow);
+    background-color: var(--lightblue);
     display: inline-block;
     height: 100vh;
     left: 0;
@@ -63,8 +63,9 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
+    row-gap: 20px;
   }
 
   .links-container-mobile {
@@ -81,7 +82,9 @@
 
   .link-item {
     color: white;
-    font-size: 3.75rem;
+    font-size: var(--xxl-text);
+    /* font-size: 3.75rem; */
+    font-family: var(--header-text);
   }
 
   .header-logo { 

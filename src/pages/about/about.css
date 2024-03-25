@@ -44,7 +44,7 @@
 }
 
 .aboutpage-posts {
-  background-color: #fadcd2;
+  background-color: var(--lightblue);
   /* display: flex; */
   /* justify-content: space-around; */
   margin-inline: -7.765vw;
