@@ -105,6 +105,26 @@
   opacity: 0.75;
 }
 
+/*container*/
+.about-img-container{ 
+  position: relative;
+}
+
+.left-stamp { 
+  max-width: 150px;
+  position: absolute;
+  right: -75px; 
+  top: 50%;
+
+}
+
+.right-stamp { 
+  position: absolute;
+  max-width: 120px;
+  left: -75px; 
+  top: 50px;
+}
+
 /* Foot Prints Positioning */
 .aboutprint1 {
   rotate: 95deg;

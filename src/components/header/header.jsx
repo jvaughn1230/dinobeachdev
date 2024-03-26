@@ -38,11 +38,11 @@ const Header = () => {
         <div className="nav-flex-container" style={{
           display: toggleMenu ? "flex" : "none"
         }}>
-          <div class="menu-icon">
+          <div class="">
             <AiOutlineCloseCircle
               className={`menu-icon ${toggleMenu ? "showCloseIcon" : "hideCloseIcon"}`}
               size={70}
-              color="white"
+              // color="white"
               onClick={() => setToggleMenu(false)}
               // onMouseOver={({target})=>target.style.color="white"}
               // onMouseOut={({target})=>target.style.color="black"}

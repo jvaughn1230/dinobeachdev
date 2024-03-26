@@ -9,6 +9,8 @@ import "./about.css";
 import rightImg from "../../images/about-img-right.png";
 import leftImg from "../../images/about-img-left.png";
 import footprint from "../../images/trex_footprint.svg";
+import sunwave from "../../images/ico-sun.svg";
+import dinoegg from "../../images/ico-dinoegg.svg";
 import wave from "../../images/waves.svg";
 import { BlogContext } from "../../context/blogContext";
 
@@ -51,7 +53,14 @@ const About = () => {
     <div className="aboutpage">
       {/* Row1 */}
       <div className="aboutpagerow1">
-        <img src={rightImg} alt="ocean background" className="about-right-img"/>
+        <div className="about-img-container">
+          <img src={rightImg} alt="ocean background" className="about-right-img"/>
+          <img
+            src={sunwave}
+            alt="dinobeach stamp"
+            className="left-stamp rotating hide-mobile"
+          />
+        </div>
         <h1 className="aboutpage-header gradient-text">
           Meet your dev dream team, Maira & Alex
         </h1>
@@ -114,7 +123,14 @@ const About = () => {
           alt="dino footprint"
           className="aboutprint aboutprint9"
         />
-        <img src={leftImg} alt="ocean background" className="about-left-img" />
+         <div className="about-img-container">
+         <img
+            src={dinoegg}
+            alt="dinobeach stamp"
+            className="right-stamp hide-mobile"
+          />
+          <img src={leftImg} alt="ocean background" className="about-left-img" />
+         </div>
       </div>
 
       {/* Blog Post Sectino */}

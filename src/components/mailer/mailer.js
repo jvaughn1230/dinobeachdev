@@ -16,7 +16,7 @@ const Mailer = () => {
     message: "",
   });
 
-  console.log(isHovered);
+  // console.log(isHovered);
 
   const newOption = (service, idx) => (
     <option value={service.title} key={idx}>
@@ -122,7 +122,7 @@ const Mailer = () => {
           required
         />
 
-        <input
+        {/* <input
           type="submit"
           value="send"
           onMouseEnter={() => setIsHovered(true)}
@@ -132,7 +132,14 @@ const Mailer = () => {
               ? "cream-text contact__submit"
               : "gradient-text contact__submit"
           }`}
-        />
+        /> */}
+        {/* <div> */}
+
+        <button
+          type="submit"
+          className= "contact__submit "
+        >Send</button>
+        {/* </div> */}
       </form>
     </div>
   );

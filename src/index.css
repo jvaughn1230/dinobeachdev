@@ -54,6 +54,16 @@ html {
   box-sizing: border-box;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: var(--cream);
+  background: var(--accent);
+}
+
+::selection {
+  color: var(--cream);
+  background: var(--accent);
+}
+
 /* ToDO: Check where using */
 .page-container {
   margin: 0 7.765vw;

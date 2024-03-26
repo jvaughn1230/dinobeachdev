@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import waves from "../../images/waves.svg";
+import waves from "../../images/ico-wav-var.svg";
 import "./blogSection.css";
 import BlogCard from "../blogCard/blogCard";
 import { BlogContext } from "../../context/blogContext";
