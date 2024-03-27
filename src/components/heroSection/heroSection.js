@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./heroSection.css";
 
 import beachBackground from "../../images/vintage-beach-short.jpg";
-import stamp from "../../images/stamp-2-var.svg";
+import stamp from "../../images/stamp-1-var4.svg";
 
 const HeroSection = () => {
   return (

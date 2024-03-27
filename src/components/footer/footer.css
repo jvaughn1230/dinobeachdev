@@ -18,16 +18,25 @@
   font-size: var(--md-text);
 }
 
+.footer-link:hover { 
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  transition: all 500ms ease;
+}
+
 .footerlinks-container {
   display: flex;
   height: 100%;
-  justify-content: space-around;
-  padding-block: 2.5rem;
-  width: 33%;
+  column-gap: 0.5rem;
+  /* justify-content: space-around; */
+  /* padding-block: 2.5rem; */
+  /* width: 33%; */
 }
 
 .dinobeach-text-line1 {
-  font-size: 1.875rem;
+  /* font-size: 1.875rem; */
+  font-size: var(--md-text);
   line-height: 2.25rem;
   margin-block: 0;
 }
@@ -53,5 +62,23 @@
 
   .footer-script {
     margin-block: 1.25rem;
+  }
+}
+
+@media (max-width: 400px) { 
+  .footer-container { 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footerlinks-container { 
+    flex-direction: row;
+  }
+  .footer-link {
+    font-size: 1rem;
+  }
+  .dinobeach-text-line1 { 
+    font-size: 1rem;
   }
 }

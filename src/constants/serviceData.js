@@ -11,8 +11,8 @@ export const serviceData = [
       "Contact Forms & Interactions",
       "Social media packet",
       "SEO Strategy",
-      "Perfect for: one-page portfolios",
     ],
+    recs: ["Restaurants", "One-page portfolios"]
   },
   {
     id: 2,
@@ -25,8 +25,8 @@ export const serviceData = [
       "Contact Forms & Interactions",
       "Social media packet",
       "SEO Strategy",
-      "Perfect for: restaurants, single-product stores",
     ],
+    recs: ["Restaurants", "Single-Product Stores", "Photographers"]
   },
   {
     id: 3,
@@ -39,22 +39,22 @@ export const serviceData = [
       "Contact Forms & Interactions",
       "Social media packet",
       "SEO Strategy",
-      "Perfect for: bloggers",
     ],
+    recs: ["Bloggers"]
   },
   {
     id: 4,
     title: "Dinoland",
-    longTitle: "E-commerce Business",
+    longTitle: "E-commerce",
     price: 500,
-    description: "We'll build out a full e-commerce business and bring you money ASAP",
+    description: "We'll build out a full e-commerce website with Shopify and bring you money ASAP",
     details: [
       // "Details 4",
       "Contact Forms & Interactions",
       "Social media packet",
       "Shopify Set Up",
-      "Perfect for: e-commerce store",
     ],
+    recs: ["Businesses"]
   },
   {
     id: 5,
@@ -66,7 +66,7 @@ export const serviceData = [
       "Contact Forms & Interactions",
       "Social media packet",
       "SEO Strategy",
-      "Perfect for: E-commerce a",
     ],
+    recs: ["Custom app build"]
   },
 ];

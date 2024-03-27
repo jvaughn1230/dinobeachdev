@@ -3,16 +3,13 @@
 :root {
   /* Main Colors */
   --cream: #fef6e4;
-  /* --cream: #faf6ee; */
+  --light: #fadcd2;/*light pink used in bg colors*/
   --pink: #eda9b2;
   --accent: #f582ae;
   --blue: #3c97be;
   --lightblue: #9bbdd9;
   --dark: #13293D;
-  /* --dark: #0F0A0A; */
-  /* --dark: #5d6567; */
-  
-  --yellow: #ffde9d;
+  /* --yellow: #ffde9d; */
 
   /* Fonts */
   --header-text: "Aclonica", sans-serif;

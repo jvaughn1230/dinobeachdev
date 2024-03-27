@@ -127,7 +127,7 @@ const About = () => {
          <img
             src={dinoegg}
             alt="dinobeach stamp"
-            className="right-stamp hide-mobile"
+            className="rocking right-stamp hide-mobile"
           />
           <img src={leftImg} alt="ocean background" className="about-left-img" />
          </div>
@@ -150,7 +150,7 @@ const About = () => {
       <div className="aboutpage-bottomrow">
         <h2 className="gradient-text">Ready to work with us?</h2>
         <Link to="/contact" className="contact-button">
-          Contact us Here
+          Contact Us
         </Link>
       </div>
     </div>

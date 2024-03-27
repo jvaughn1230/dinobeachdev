@@ -1,13 +1,17 @@
 .service-card-container {
-  background-color: #fadcd2;
+  /* background-color: #fadcd2; */
   /* background-color: var(--pink); */
-  
+  background-color: var(--lightblue);
+  box-shadow: 5px 5px 0px var(--blue);
+  color: var(--dark);
   border-radius: 0.75rem;
   /* height: 42.8954vh; */
   margin: 2rem 2rem 2.5rem;
   padding: 2rem 3.5rem;
   position: relative;
   width: 25vw;
+  /* box-shadow: 5px 5px 0px var(--lightblue); */
+
 }
 
 .service-bubble {
