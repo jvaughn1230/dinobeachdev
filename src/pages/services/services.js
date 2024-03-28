@@ -6,6 +6,7 @@ import ServiceDetailsCard from "../../components/serviceDetailsCard/serviceDetai
 import ServiceImgCol from "../../components/serviceImgCol/serviceImgCol";
 import surfboard from "../../images/ico-surfboardpink.svg";
 import sun from "../../images/ico-sunpink.svg";
+import { Link } from "react-router-dom";
 
 const Services = () => {
     const [selectedService, setSelectedService] = useState(
@@ -93,6 +94,9 @@ const Services = () => {
                                     ))}
                                 </ol>
                             </div>
+                            <Link to="/contact" className="serviceContactBtn">
+                                Enquire
+                            </Link>
                         </div>
                     </div>
                 ))}

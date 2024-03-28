@@ -110,6 +110,28 @@
     font-family: var(--header-text);
 }
 
+.serviceContactBtn {
+    background-color: var(--pink);
+    border-radius: 50px;
+    color: var(--cream);
+    box-shadow: 5px 5px 0px var(--light);
+    display: flex;
+    font-family: var(--content-text);
+    font-size: var(--md-text);
+    font-weight: 800;
+    padding: 1.25rem 2.25rem;
+    justify-content: center;
+    text-decoration: none;
+    position: absolute;
+    right: 10%;
+}
+
+.serviceContactBtn:hover {
+    cursor: pointer;
+    background: -webkit-linear-gradient(100deg, var(--pink), var(--blue));
+    transition: all 500ms ease-out;
+}
+
 /* !!!!!!!!!!!!!!! end new stuff */
 
 servicespg__titlecard-container {
