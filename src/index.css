@@ -1,89 +1,99 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Aclonica&family=Space+Mono&display=swap");
 
 :root {
-  /* Main Colors */
-  --cream: #faf6ee;
-  --pink: #eda9b2;
-  --blue: #3c97be;
-  --dark: #13293D;
-  /* --dark: #0F0A0A; */
-  /* --dark: #5d6567; */
-  
-  --yellow: #ffde9d;
+    /* Main Colors */
+    --cream: #fef6e4;
+    --light: #fadcd2; /*light pink used in bg colors*/
+    --pink: #eda9b2;
+    --accent: #f582ae;
+    --blue: #3c97be;
+    --lightblue: #9bbdd9;
+    --dark: #13293d;
 
-  /* Fonts */
-  --header-text: "Aclonica", sans-serif;
-  --content-text: "ABeeZee", sans-serif;
+    /* Fonts */
+    --header-text: "Aclonica", sans-serif;
+    --content-text: "ABeeZee", sans-serif;
 
-  /* Font Sizes */
-  --xxl-text: clamp(2.25rem, 6.25vw, 96px);
-  --xl-text: clamp(1.5rem, 4.6875vw, 72px);
-  --lg-text: clamp(1.5rem, 3.125vw, 48px);
-  --md-text: clamp(1.25rem, 1.5625vw, 24px);
-  --sm-text: clamp(0.5rem, 1.0417vw, 16px);
+    /* Font Sizes */
+    --xxl-text: clamp(2.25rem, 6.25vw, 96px);
+    --xl-text: clamp(1.5rem, 4.6875vw, 72px);
+    --lg-text: clamp(1.5rem, 3.125vw, 48px);
+    --md-text: clamp(1.25rem, 1.5625vw, 24px);
+    --sm-text: clamp(0.5rem, 1.0417vw, 16px);
 
-  /* Z-Indexes */
-  --layer2: 2;
-  --layer3: 3;
-  --layer4: 4;
-  --top-layer: 10;
+    /* Z-Indexes */
+    --layer2: 2;
+    --layer3: 3;
+    --layer4: 4;
+    --top-layer: 10;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  border-top-style: solid;
-  border-top-width: 15px;
-  border-image: linear-gradient(to right,var(--pink), var(--blue)) 1;
-  background: #faf6ee;
-  overflow-x: hidden;
-  /* height: 100vh; */
-  width: 100vw;
-  font-family: var(--content-text);
-  color: var(--dark);
+    margin: 0;
+    padding: 0;
+    border-top-style: solid;
+    border-top-width: 15px;
+    border-image: linear-gradient(to right, var(--pink), var(--blue)) 1;
+    background: #faf6ee;
+    overflow-x: hidden;
+    /* height: 100vh; */
+    width: 100vw;
+    font-family: var(--content-text);
+    color: var(--dark);
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: var(--cream);
+    background: var(--accent);
+}
+
+::selection {
+    color: var(--cream);
+    background: var(--accent);
 }
 
 /* ToDO: Check where using */
 .page-container {
-  margin: 0 7.765vw;
-  /* max-width: 80rem; */
+    margin: 0 7.765vw;
+    /* max-width: 80rem; */
 }
 
 .gradient-text {
-  background: -webkit-linear-gradient(var(--pink), var(--blue));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(var(--pink), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .gradient-bg {
-  background: -webkit-linear-gradient(var(--pink), var(--blue));
+    background: -webkit-linear-gradient(var(--pink), var(--blue));
 }
 
 .hide {
-  display: none;
+    display: none;
 }
 
 .show {
-  display: inline;
+    display: inline;
 }
 
 .transparent {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 @media (max-width: 750px) {
-  /* TODO: delete if still empty at end */
-  .page-container {
-    /* max-width: 28rem; */
-  }
+    /* TODO: delete if still empty at end */
+    .page-container {
+        /* max-width: 28rem; */
+    }
 }
 
 /* $color-code-background: #272822;
@@ -92,21 +102,21 @@ $color-code-color: #f8f8f2; */
   white-space: pre;
 } */
 
-pre { 
-  background-color: var(--dark);
-  border-radius: 0.5rem;
-  padding: 0.75rem;
-  display: inline-block;
-  width: 100%;
-  border-width: 1rem; 
-  border-color: var(--pink);
-  font-family: 'Space Mono', monospace;
-  white-space: pre-wrap;
+pre {
+    background-color: var(--dark);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    display: inline-block;
+    width: 100%;
+    border-width: 1rem;
+    border-color: var(--pink);
+    font-family: "Space Mono", monospace;
+    white-space: pre-wrap;
 }
 
 code {
-  color: #fff;
-  line-height: 1.5rem;
-  font-family: 'Space Mono', monospace;
-  /* white-space: nowrap; */
+    color: #fff;
+    line-height: 1.5rem;
+    font-family: "Space Mono", monospace;
+    /* white-space: nowrap; */
 }

@@ -15,6 +15,7 @@ const ServiceSection = () => {
         longTitle={service.longTitle}
         description={service.description}
         details={service.details}
+        recs={service.recs}
       />
     );
   };

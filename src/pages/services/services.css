@@ -1,12 +1,142 @@
 .servicespg {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
 }
 
+.stamp-left {
+    max-height: 100px;
+    position: absolute;
+    left: -30px;
+}
+
+.stamp-right {
+    max-height: 100px;
+    position: absolute;
+    right: -60px;
+    top: 25px;
+}
+
+/* !!!!!!!!!!!!!!! new stuff  */
+.headerTag {
+    max-width: 800px;
+    margin: 5rem auto;
+    text-align: center;
+    position: relative;
+}
+.headerTag h1 {
+    font-size: var(--lg-text);
+    font-family: var(--header-text);
+    color: var(--blue);
+}
+
+.headerTag p {
+    font-size: var(--md-text);
+    font-weight: 600;
+}
+
+.serviceRow {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: var(--md-text);
+    margin: 3rem auto;
+}
+
+.serviceRow:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.serviceDesc {
+    flex: 1 1 65%;
+}
+
+.serviceDesc h3 {
+    font-size: var(--lg-text);
+    font-family: var(--header-text);
+}
+
+.serviceDescSub {
+    font-family: var(--header-text);
+}
+
+.serviceCardContainer {
+    background-color: var(--lightblue);
+    box-shadow: 5px 5px 0px var(--blue);
+    color: var(--dark);
+    border-radius: 0.75rem;
+    margin: 2rem 2rem 2.5rem;
+    padding: 2rem 3.5rem;
+    position: relative;
+    flex: 1 1 35%;
+}
+
+.servicePriceBubble {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 6rem;
+    justify-content: center;
+    left: -2.5rem;
+    position: absolute;
+    top: -3rem;
+    width: 6rem;
+}
+
+.servicePrice h4 {
+    font-size: var(--md-text);
+    font-family: var(--header-text);
+    color: var(--cream);
+    margin: 0;
+}
+
+.servicePrice::before,
+.servicePrice::after {
+    font-family: var(--content-text);
+    color: var(--cream);
+    display: block;
+    font-size: var(--sm-text);
+}
+.servicePrice::before {
+    content: "from";
+    text-align: left;
+}
+.servicePrice::after {
+    content: "USD";
+    text-align: right;
+}
+
+.serviceCardTitle {
+    font-size: var(--md-text);
+    font-family: var(--header-text);
+}
+
+.serviceContactBtn {
+    background-color: var(--pink);
+    border-radius: 50px;
+    color: var(--cream);
+    box-shadow: 5px 5px 0px var(--light);
+    display: flex;
+    font-family: var(--content-text);
+    font-size: var(--md-text);
+    font-weight: 800;
+    padding: 1.25rem 2.25rem;
+    justify-content: center;
+    text-decoration: none;
+    position: absolute;
+    right: 10%;
+}
+
+.serviceContactBtn:hover {
+    cursor: pointer;
+    background: -webkit-linear-gradient(100deg, var(--pink), var(--blue));
+    transition: all 500ms ease-out;
+}
+
+/* !!!!!!!!!!!!!!! end new stuff */
+
 servicespg__titlecard-container {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 /* TODO: Delete if still empty at end */
@@ -14,7 +144,12 @@ servicespg__titlecard-container {
 }
 
 @media (max-width: 800px) {
-  .servicespg {
-    justify-content: space-around;
-  }
+    .serviceRow:nth-child(n) {
+        flex-direction: column;
+    }
+
+    .serviceCardContainer {
+        margin-top: 3rem;
+        padding: 1.5rem 2rem;
+    }
 }

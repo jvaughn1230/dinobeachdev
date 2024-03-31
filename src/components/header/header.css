@@ -7,21 +7,80 @@
 
 .desktop-links-container {
   font-family: var(--header-text);
+  /* font-size; */
 }
 
 .link-item {
   color: var(--dark);
-  font-size: 1.0417vw;
+  /* font-size: 1.0417vw; */
+  font-size: 1.25rem;
   margin-inline: 1.5rem;
   text-decoration: none;
+  position: relative;
 }
 
 .link-item:hover {
   color: var(--blue);
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  transition: all 500ms ease;
 }
 
-.closeMobileMenu,
-.openMobileMenu,
+.link-item:nth-child(1):hover::before,
+.link-item:nth-child(2):hover::before,
+.link-item:nth-child(3):hover::before,
+.link-item:nth-child(4):hover::before { 
+  display: inline-block;
+  content:"";
+  position: absolute;
+}
+
+.link-item:nth-child(1):hover::before,
+.link-item:nth-child(2):hover::before { 
+  background-size: 40px 50px;
+  width: 40px; 
+  height: 50px;
+  left: -40px; 
+  bottom:-5px;
+}
+
+.link-item:nth-child(1):hover::before {
+  background-image: url('/src/images/ico-sun.svg');
+}
+
+.link-item:nth-child(2):hover::before {
+  background-image: url('/src/images/ico-print.svg');
+}
+
+.link-item:nth-child(3):hover::before {
+  background-image: url('/src/images/ico-surfboard.svg');
+  background-size: 40px 50px;
+  width: 40px; 
+  height: 50px;
+  left: -33px; 
+  bottom:-5px;
+}
+
+.link-item:nth-child(4):hover::before {
+  background-image: url('/src/images/ico-dinoegg.svg');
+  background-size: 30px 40px;
+  width: 30px; 
+  height: 40px;
+  left: -33px; 
+  bottom:-5px;
+}
+
+/* .link-item:hover::before {
+  content: '🌴';
+  position: absolute;
+  left: -25px;
+  bottom: 1px;
+  transition: all 500ms ease;
+
+} */
+
+/* .closeMobileMenu, */
+/* .openMobileMenu, */
 .hideCloseIcon,
 .waves-menu {
   display: none;
@@ -46,25 +105,26 @@
   }
 
   .openMobileMenu {
-    background-color: var(--yellow);
+    background-color: var(--lightblue);
     display: inline-block;
     height: 100vh;
     left: 0;
     overflow: hidden;
-    position: absolute;
+    /* position: absolute; */
     position: fixed;
     top: 0;
-    width: 100vw;
+    /* width: 100vw; */
     z-index: var(--top-layer);
   }
 
   .nav-flex-container {
     align-items: center;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     height: 100%;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: center;
+    /* width: 100%; */
+    row-gap: 20px;
   }
 
   .links-container-mobile {
@@ -81,12 +141,91 @@
 
   .link-item {
     color: white;
-    font-size: 3.75rem;
+    font-size: var(--xxl-text);
+    /* font-size: 3.75rem; */
+    font-family: var(--header-text);
+    position: relative;
   }
 
+  .link-item:hover {
+    color: var(--blue);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    transition: all 300ms ease-out;
+  }
+
+  /* .link-item:hover::before {
+    background-image: url('/src/images/ico-sun.svg');
+  } */
+  .link-item:nth-child(3):hover::before, 
+  .link-item:nth-child(5):hover::before { 
+    display: none;
+  }
+
+  .link-item:nth-child(3):hover::after,
+  .link-item:nth-child(5):hover::after { 
+    display: inline-block;
+    content:"";
+    position: absolute;
+  }
+
+  .link-item:nth-child(2):hover::before,
+  .link-item:nth-child(3):hover::after { 
+    background-size: 40px 60px;
+    width: 40px; 
+    height: 60px;
+  }
+
+  .link-item:nth-child(2):hover::before {
+    background-image: url('/src/images/ico-sun.svg');
+    left: -50px; 
+    bottom:15px;
+  }
+
+  .link-item:nth-child(3):hover::after {
+    background-image: url('/src/images/ico-print.svg');
+    background-position: right;
+    /* right: 20px;  */
+    bottom:15px;
+  }
+
+  .link-item:nth-child(4):hover::before {
+    background-image: url('/src/images/ico-surfboard.svg');
+    background-size: 40px 50px;
+    width: 40px; 
+    height: 50px;
+    left: -40px; 
+    bottom:5px;
+  }
+
+  .link-item:nth-child(5):hover::after {
+    background-image: url('/src/images/ico-dinoegg.svg');
+    background-size: 30px 40px;
+    width: 30px; 
+    height: 40px;
+    right: -35px;
+    bottom:15px;
+  }
+  
   .header-logo { 
     width: 100%; 
     height: auto;
     max-width: 120px; /* optional */
+  }
+
+  .menu-icon { 
+    color: white;
+  }
+
+  .menu-icon:hover { 
+    fill: var(--blue);
+    stroke: var(--blue);
+    transform: rotate(180deg);
+    transition: 
+    stroke 300ms ease-out, 
+    fill 300ms ease-out, 
+    transform 1000ms ease-out, 
+    
+    ;
   }
 }
