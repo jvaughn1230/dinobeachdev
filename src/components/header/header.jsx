@@ -24,7 +24,6 @@ const Header = () => {
             />
 
             {/* Mobile Links Container */}
-            {/* <div className={`${toggleMenu ? "openMobileMenu" : "closeMobileMenu"}`}> */}
             <div
                 className="openMobileMenu"
                 style={{
@@ -44,16 +43,13 @@ const Header = () => {
                                 toggleMenu ? "showCloseIcon" : "hideCloseIcon"
                             }`}
                             size={70}
-                            // color="white"
                             onClick={() => setToggleMenu(false)}
-                            // onMouseOver={({target})=>target.style.color="white"}
-                            // onMouseOut={({target})=>target.style.color="black"}
                             style={{ cursor: "pointer" }}
                         />
                     </div>
 
                     <Link
-                        to="/about"
+                        to="/About"
                         className="link-item"
                         onClick={() => setToggleMenu(false)}
                     >
@@ -89,9 +85,7 @@ const Header = () => {
                 <Link to="/about" className="link-item">
                     About
                 </Link>
-                {/* <Link to="/services" className="link-item">
-          Services
-        </Link> */}
+
                 <Link to="/services" className="link-item">
                     Services
                 </Link>

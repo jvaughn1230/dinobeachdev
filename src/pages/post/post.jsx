@@ -9,16 +9,16 @@ const Post = () => {
     console.log(post);
 
     // Need to check for post and adjust
-    const postDate = DateTime.fromFormat(
-        post.post.publishedAt,
-        "M/d/yyyy"
-    ).toFormat("MMMM dd, yyyy");
+    // const postDate = DateTime.fromFormat(
+    //     post?.post.publishedAt,
+    //     "M/d/yyyy"
+    // ).toFormat("MMMM dd, yyyy");
 
     return (
         <div className="post__container">
             <div className="post__header_container">
                 <div className="post__details_container">
-                    <h4>{postDate}</h4>
+                    {/* <h4>{postDate}</h4> */}
                     <h1 className="post__title gradient-text">
                         {post.post.title}
                     </h1>
