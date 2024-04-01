@@ -41,6 +41,7 @@
     height: 4rem;
     position: absolute;
     width: 4.1667vw;
+    z-index: 2;
 }
 
 .aboutpage-posts {
@@ -68,9 +69,9 @@
     margin-bottom: 0;
 }
 
-.aboutblogcard:nth-child(3) {
+/* .aboutblogcard:nth-child(3) {
     margin-top: 100px;
-}
+} */
 
 .aboutpage-bottomrow {
     display: flex;
@@ -207,6 +208,22 @@
         flex-direction: column;
     }
 
+    .about-right-img {
+        display: none;
+    }
+
+    .about-left-img {
+        display: none;
+    }
+
+    .aboutprint1,
+    .aboutprint2,
+    .aboutprint3,
+    .aboutprint4,
+    .aboutprint5 {
+        display: none;
+    }
+
     .aboutpage-header {
         max-width: 80%;
         text-align: center;
@@ -220,12 +237,17 @@
         max-width: 80%;
     }
 
+    .right-stamp {
+        display: none;
+    }
+
     .aboutpage-posts {
         align-items: center;
+        justify-content: center;
         flex-direction: column;
     }
 
-    .blogsection__posts:nth-child(2) {
+    .blogsection__posts:nth-child(3) {
         margin-top: 0;
     }
 

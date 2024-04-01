@@ -18,16 +18,16 @@ const About = () => {
     const { homePosts } = useContext(BlogContext);
 
     const blogPosts = homePosts.map((post) => (
-        <div className="aboutblogcard">
-            <BlogCard
-                title={post.title}
-                description={post.description}
-                body={post.body}
-                img={post.image}
-                id={post.id}
-                key={post.id}
-            />
-        </div>
+        // <div className="aboutblogcard">
+        <BlogCard
+            title={post.title}
+            description={post.description}
+            body={post.body}
+            img={post.image}
+            id={post.id}
+            key={post.id}
+        />
+        // </div>
     ));
 
     return (
@@ -43,7 +43,7 @@ const About = () => {
                     <img
                         src={sunwave}
                         alt="dinobeach stamp"
-                        className="left-stamp rotating hide-mobile"
+                        className="left-stamp rotating hide-mobile sunicon"
                     />
                 </div>
                 <h1 className="aboutpage-header gradient-text">

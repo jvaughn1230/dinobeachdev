@@ -59,7 +59,8 @@
         /* grid-template-columns: 1fr; */
         /* align-items: center; */
         /* flex-direction: column; */
-        align-items: start;
+        /* align-items: start; */
+        flex-wrap: wrap;
     }
 
     .blogsection h2 {
@@ -78,7 +79,8 @@
     }
 
     .homeblogcard .blogcard {
-        /* width: 100%; */
+        width: 100%;
+        position: relative;
         height: 200px;
     }
 }
